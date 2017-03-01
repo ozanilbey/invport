@@ -1,0 +1,10 @@
+body#error { padding-bottom: 0; }
+
+#error header { display: table; box-sizing: border-box; height: 100%; min-height: inherit; padding-top: 0; }
+#error header .container { display: table-cell; text-align: center; vertical-align: middle; }
+#error header .type[id^=error] { display: block; width: 100%; max-width: inherit; margin: 0 auto; }
+#error header h1 { font-size: 8em; line-height: 67%; margin-bottom: .35em; }
+#error header i { display: block; }
+#error header button { padding: 1.5% 4%; margin-top: 5%; }
+
+#error footer { display: none; }
