@@ -5,6 +5,17 @@ $(document).ready(function() {
     $('a[href="#"]').click(function(e){
         e.preventDefault();
     });
+    if($(window).scrollTop() <= 0){
+        $('nav').css('background-color', 'rgba(255, 255, 255, 0)').css('box-shadow', '0 1px 5px rgba(0, 0, 0, 0), 0 1px 3px rgba(0, 0, 0, 0)');
+    } else if ($(window).scrollTop() > 0 && $(window).scrollTop() <= 100) {
+        $('nav').css('background-color', 'rgba(255, 255, 255, ' + $(window).scrollTop() / 100 + ')').css('box-shadow', '0 1px 5px rgba(0, 0, 0, ' + $(window).scrollTop() / 2000 + '), 0 1px 3px rgba(0, 0, 0, ' + $(window).scrollTop() / 1000 + ')');
+    } else {
+        $('nav').css('background-color', 'rgba(255, 255, 255, 1)').css('box-shadow', '0 1px 5px rgba(0, 0, 0, .05), 0 1px 3px rgba(0, 0, 0, .1)');
+    }
+    $('.menu a').click(function(){
+        $('.menu a').removeClass('active');
+        $(this).addClass('active');
+    });
 });
 
 $(window).resize(function() {
@@ -14,6 +25,13 @@ $(window).resize(function() {
     $('section.overlay').css('height', viewportHeight + 'px');
 });
 
+
 $(window).scroll(function() {
-    
+    if($(window).scrollTop() <= 0){
+        $('nav').css('background-color', 'rgba(255, 255, 255, 0)').css('box-shadow', '0 1px 5px rgba(0, 0, 0, 0), 0 1px 3px rgba(0, 0, 0, 0)');
+    } else if ($(window).scrollTop() > 0 && $(window).scrollTop() <= 100) {
+        $('nav').css('background-color', 'rgba(255, 255, 255, ' + $(window).scrollTop() / 100 + ')').css('box-shadow', '0 1px 5px rgba(0, 0, 0, ' + $(window).scrollTop() / 2000 + '), 0 1px 3px rgba(0, 0, 0, ' + $(window).scrollTop() / 1000 + ')');
+    } else {
+        $('nav').css('background-color', 'rgba(255, 255, 255, 1)').css('box-shadow', '0 1px 5px rgba(0, 0, 0, .05), 0 1px 3px rgba(0, 0, 0, .1)');
+    }
 });

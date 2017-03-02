@@ -77,50 +77,20 @@
 </head>
 <body id="<?php echo $main; ?>"<?php if(!empty($sub)) { echo ' class="'.$sub.'"'; } ?>>
     <nav>
-        <div class="container">
-            <div class="identity">
-                <a href="/">
-                    <img src="<?php echo $root; ?>/assets/images/identity/logo.png">
-                </a>
-            </div>
-            <section class="menu">
-                <ul>
-                    <li class="menu-item">
-                        <a href="/anasayfa">
-                            Anasayfa
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="/projeler">
-                            Projeler
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="/haberler">
-                            Haberler
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="/iletisim">
-                            İletişim
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="/uyelik">
-                            Üye Ol
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="/giris">
-                            Giriş Yap
-                        </a>
-                    </li>
-                </ul>
-                <a class="switch" href="#">
-                    <img class="menu-icon" src="<?php echo $root; ?>/assets/images/interface/icon_menu.png">
-                    <img class="close-icon" src="<?php echo $root; ?>/assets/images/interface/icon_close.png">
-                </a>
-            </section>
+        <div class="menu container">
+            <a class="identity active" href="#/">
+                <img src="<?php echo $root; ?>/assets/images/identity/logo.png">
+            </a>
+            <a href="#/<?php echo $root; ?>/nedir">NEDİR?</a>
+            <a href="#/<?php echo $root; ?>/projeler">PROJELER</a>
+            <a href="#/<?php echo $root; ?>/haberler">HABERLER</a>
+            <a href="#/<?php echo $root; ?>/iletisim">İLETİŞİM</a>
+            <a href="#/<?php echo $root; ?>/uyelik">ÜYE OL</a>
+            <a href="#/<?php echo $root; ?>/giris">GİRİŞ YAP</a>
+            <a class="switch" href="#">
+                <img class="menu-icon" src="<?php echo $root; ?>/assets/images/interface/icon_menu.png">
+                <img class="close-icon" src="<?php echo $root; ?>/assets/images/interface/icon_close.png">
+            </a>
         </div>
     </nav>
     <?php
