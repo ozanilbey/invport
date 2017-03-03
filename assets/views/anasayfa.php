@@ -15,7 +15,7 @@
     <div class="cards container">
         <div class="card item">
             <a href="#">
-                <img src="<?php echo $root; ?>/assets/images/icons/tasarim-mimari.png" />
+                <img src="<?php echo $root; ?>/assets/images/icons/saglik.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli eğitim almaları için gereken eğitimin tabletler ile verilmesini amaçlayan...</p>
                 <blockquote>
@@ -39,7 +39,7 @@
         </div>
         <div class="card item">
             <a href="#">
-                <img src="<?php echo $root; ?>/assets/images/icons/tasarim-mimari.png" />
+                <img src="<?php echo $root; ?>/assets/images/icons/matematik-istatistik.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli eğitim almaları için gereken eğitimin tabletler ile verilmesini amaçlayan...</p>
                 <blockquote>
@@ -51,7 +51,7 @@
         </div>
         <div class="card item">
             <a href="#">
-                <img src="<?php echo $root; ?>/assets/images/icons/tasarim-mimari.png" />
+                <img src="<?php echo $root; ?>/assets/images/icons/fizik.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli eğitim almaları için gereken eğitimin tabletler ile verilmesini amaçlayan...</p>
                 <blockquote>
@@ -63,7 +63,7 @@
         </div>
         <div class="card item">
             <a href="#">
-                <img src="<?php echo $root; ?>/assets/images/icons/tasarim-mimari.png" />
+                <img src="<?php echo $root; ?>/assets/images/icons/isgelistirme.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli eğitim almaları için gereken eğitimin tabletler ile verilmesini amaçlayan...</p>
                 <blockquote>
@@ -75,7 +75,7 @@
         </div>
         <div class="card item">
             <a href="#">
-                <img src="<?php echo $root; ?>/assets/images/icons/tasarim-mimari.png" />
+                <img src="<?php echo $root; ?>/assets/images/icons/bilgisayarmuhendisligi.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli eğitim almaları için gereken eğitimin tabletler ile verilmesini amaçlayan...</p>
                 <blockquote>
