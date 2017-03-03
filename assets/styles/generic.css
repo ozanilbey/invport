@@ -4,10 +4,10 @@
 .announcement > p { display: table-cell; position: relative; top: -10px; left: 10px; height: 50px; text-align: center; vertical-align: middle; }
 .announcement > p::before { content: url(../images/interface/icon-announcement.png); position: relative; top: 15px; left: -10px; }
 
+.showcase { background-image: url(../images/interface/bg-showcase.png); background-position: top center; background-repeat: repeat; background-color: transparent; border-bottom: 5px solid rgba(0, 69, 166, 1); }
+
 button img, .button img { display: inline-block; position: relative; height: 30px; margin: -5px 5px -5px 0; vertical-align: middle; }
 .button > img + p { line-height: 20px; }
-
-
 
 
 
@@ -111,7 +111,7 @@ header { display: inline-block; width: 100%; min-height: 640px; padding-top: 100
 header a { display: inline; }
 header > .container > h1 { display: inline-block; margin: 3% 0; font-size: 36px; text-align: center; }
 header .container { position: relative; height: auto; transition: left 1s ease; }
-header p { font-size: 1.5em; line-height: 150%; }
+header p { font-size: 1.2em; line-height: 150%; }
 header button, header .button { font-size: 24px; }
 
 /* Section */
@@ -132,9 +132,23 @@ footer, footer .container, footer .promo { height: 250px; }
 .item a { display: block; }
 .item img { width: 100%; height: auto; }
 
+/* Cards */
+
+.card { overflow: hidden; word-wrap: break-word; background-color: rgba(255, 255, 255, 1); border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); transition: all 0.3s cubic-bezier(.25,.8,.25,1); cursor: pointer; }
+.card a { display: block; margin: 5% 5% 0 5%; }
+.card:hover { box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.24); }
+.card img { width: 100%; margin: 0; }
+.card h1 { width: 90%; margin-bottom: 5%; line-height: 1.5em; text-align: center; overflow: hidden; }
+.card p { color: rgba(71, 75, 76, .8); margin: 2% 0; font-size: .85em; line-height: 1.5em; text-align: left; overflow: hidden; }
+.card blockquote { color: rgba(0, 69, 166, 1); display: block; width: 100%; margin-top: 5%; padding: 2% 0; font-family: 'merriweatherbold', serif; font-size: .85em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; border-top: 1px solid rgba(0, 0, 0, .15); }
+.card blockquote p { margin-top: 0; padding-left: 25px; padding-bottom: 2px; color: rgba(0, 69, 166, 1); font-size: inherit; background-position: left center; background-repeat: no-repeat; background-color: transparent; }
+.card blockquote p:first-child { float: left; background-image: url(../images/interface/icon-timeleft.png); }
+.card blockquote p:last-child { float: right; background-image: url(../images/interface/icon-prize.png); }
+.card b { display: block; position: relative; box-sizing: border-box; left: 0; right: 0; bottom: 0; width: 100%; height: 10%; padding: 3%; color: white; text-align: center; background-color: rgba(0, 212, 115, 1); }
+
 /* Buttons */
 
-button, .button { display: block; position: relative; width: auto; min-height: 40px; margin: 0 auto; margin-top: 3%; color: white; line-height: 100%; padding: 1.75% 2%; font-size: 100%; color: white; text-align: center; text-transform: uppercase; background-color: rgba(0, 69, 166, 1); border: none; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5); transition: all 0.3s cubic-bezier(.25,.8,.25,1); cursor: pointer; }
+button, .button { display: block; position: relative; width: auto; min-height: 40px; margin: 0 auto; margin-top: 3%; color: white; line-height: 100%; padding: 1.75% 2%; font-size: 100%; color: white; text-align: center; text-transform: uppercase; background-color: rgba(0, 69, 166, 1); border: none; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0), 0 1px 2px rgba(0,0,0,0); transition: all 0.25s cubic-bezier(.25,.8,.25,1); cursor: pointer; }
 .button { display: table; line-height: 150%; }
 button:disabled, .button:disabled { opacity: 0.35; -moz-opacity:0.35; -khtml-opacity: 0.35; filter: alpha(opacity=35); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=35)"; }
 button, .button, button *, .button * { cursor: pointer !important; }
@@ -142,7 +156,8 @@ button a, .button p { display: table-cell; position: relative; vertical-align: m
 button p { display: inline-block; position: relative; vertical-align: middle; }
 
 button, .button {  }
-button:hover, .button:hover { box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.24); }
+button:hover, .button:hover { box-shadow: 0 2px 5px rgba(0, 69, 166, 0.2), 0 2px 5px rgba(0, 69, 166, 0.4); }
+button:active, .button:active { top: 1px; box-shadow: none; }
 
 /* Color */
 
@@ -152,7 +167,7 @@ h1, h2, a, a:visited, a.link, a.link:visited, a.link::after, button, .button { c
 
 @media only screen and (max-width: 479px) {
     
-    body { font-size: ; }
+    body { font-size: 16px; }
     h1 { font-size: ; }
     h2 { font-size: ; }
 
@@ -183,7 +198,7 @@ h1, h2, a, a:visited, a.link, a.link:visited, a.link::after, button, .button { c
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     
-    body { font-size: ; }
+    body { font-size: 17px; }
     h1 { font-size: ; }
     h2 { font-size: ; }
     
@@ -215,7 +230,7 @@ h1, h2, a, a:visited, a.link, a.link:visited, a.link::after, button, .button { c
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     
-    body { font-size: ; }
+    body { font-size: 19px; }
     h1 { font-size: ; }
     h2 { font-size: ; }
     
@@ -247,7 +262,7 @@ h1, h2, a, a:visited, a.link, a.link:visited, a.link::after, button, .button { c
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
     
-    body { font-size: ; }
+    body { font-size: 20px; }
     h1 { font-size: ; }
     h2 { font-size: ; }
     
@@ -263,7 +278,7 @@ h1, h2, a, a:visited, a.link, a.link:visited, a.link::after, button, .button { c
 
 @media only screen and (min-width: 1280px) and (max-width: 1439px) {
     
-    body { font-size: ; }
+    body { font-size: 22px; }
     h1 { font-size: ; }
     h2 { font-size: ; }
     
@@ -279,7 +294,7 @@ h1, h2, a, a:visited, a.link, a.link:visited, a.link::after, button, .button { c
 
 @media only screen and (min-width: 1440px) and (max-width: 1679px) {
     
-    body { font-size: ; }
+    body { font-size: 23px; }
     h1 { font-size: ; }
     h2 { font-size: ; }
     
@@ -291,7 +306,7 @@ h1, h2, a, a:visited, a.link, a.link:visited, a.link::after, button, .button { c
 
 @media only screen and (min-width: 1680px) {
     
-    body { font-size: ; }
+    body { font-size: 24px; }
     h1 { font-size: ; }
     h2 { font-size: ; }
     

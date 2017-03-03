@@ -102,7 +102,24 @@
     ?>
     <footer>
         <div class="container">
-            footer buraya gelecek.
+            <div class="left">
+                <b>ESOGÜ Teknoloji Transfer Ofisi</b>
+                <br>
+                Eskişehir Osmangazi Üniversitesi Rektörlüğü
+                <br>
+                3. Kat Ofis No: 329-331-323-333-334
+                <br>
+                <b>Telefon:</b> <a href="tel:+902222293954">0 (222) 229 39 54</a>
+                <br>
+                <b>Faks:</b> <a href="tel:+902222396406">0 (222) 239 64 06</a>
+                <br>
+            <div class="right">
+                <b>Website:</b> <a href="https://ettom.ogu.edu.tr">https://ettom.ogu.edu.tr  
+                <b>E-Posta Adresi:</b> <a href="mailto:ettom@ogu.edu.tr">ettom@ogu.edu.tr</a>  
+                <b>Facebook:</b> <a href="http://facebook.com/ttoettom">facebook.com/ttoettom</a>
+                <b>Instagram:</b> <a href="http://instagram/ttoettom">instagram/ttoettom</a>
+                <b>Twitter:</b> <a href="http://twitter.com/ttoettom">twitter.com/ttoettom</a>
+            </div>
         </div>
     </footer>
 </body>
