@@ -87,11 +87,22 @@
         </div>
     </div>
 </section>
-<section>
-    <div class="promotion container">
-        <img class="icon" src="assets/images/interface/icon-handshake.png">
-        <h1>Ben de varım diyorsan...</h1>
-        <p>Hemen üyeliğini oluşturup bir projeye katıl!</p>
+<section class="press">
+    <div class="container">
+        <div class="message">
+            <img src="<?php echo $root?>/assets/images/interface/icon-quote.png">
+            <p>Açık inovasyon programı sayesinde firmaların ihtiyaç duydukları iş fikri ve üretim çözümlerinin arzını kolaylaştırmayı hedefliyoruz. Çözüm sahibi ile firmanin bir araya gelmesini kolaylaştırarak inovasyon sürecini hızlandıracağımıza inanıyoruz. Türkiye’nin inovasyona ihtiyacı var!</p>
+            <i>Prof. Dr. Hasan Gönen — ESOGÜ Rektörü</i>
+        </div>
+    </div>
+    <img src="<?php echo $root; ?>/assets/images/interface/visual-pr.png" />
+</section>
+<section class="promotion">
+    <div class="container">
+        <div class="handshake">
+            <h1>Ben de varım diyorsan...</h1>
+            <p>Hemen üyeliğini oluşturup bir projeye katıl!</p>
+        </div>
         <button>HEMEN ÜYE OL!</button>
     </div>
 </section>

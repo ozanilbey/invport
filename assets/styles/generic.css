@@ -2,12 +2,11 @@
 
 .announcement { display: table; width: 100%; padding: 1%; font-size: 24px; background-color: white; box-shadow: 0 1px 5px rgba(0, 0, 0, .05), 0 1px 3px rgba(0, 0, 0, .1); }
 .announcement > p { display: table-cell; position: relative; top: -10px; left: 10px; height: 50px; text-align: center; vertical-align: middle; }
-.announcement > p::before { content: url(../images/interface/icon-announcement.png); position: relative; top: 15px; left: -10px; }
-
-.showcase { background-image: url(../images/interface/bg-showcase.png); background-position: top center; background-repeat: repeat; background-color: transparent; border-bottom: 5px solid rgba(0, 69, 166, 1); }
 
 button img, .button img { display: inline-block; position: relative; height: 30px; margin: -5px 5px -5px 0; vertical-align: middle; }
 .button > img + p { line-height: 20px; }
+
+
 
 
 
@@ -56,7 +55,7 @@ header, section, footer, .container { box-sizing: border-box; }
 
 /* Initial */
 
-body { position: relative; padding-bottom: 250px; color: rgba(71, 75, 76, 1); font-family: 'sourcesansproregular', sans-serif; font-size: 16px; background-color: rgba(245, 247, 250, 1); }
+body { position: relative; padding-bottom: 350px; color: rgba(71, 75, 76, 1); font-family: 'sourcesansproregular', sans-serif; font-size: 16px; background-color: rgba(245, 247, 250, 1); }
 body, a, b, p, h1, h2, h3, h4, h5, h6, span, del, button, .button { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; }
 h1, h2, h3, h4, h5, h6, button, .button { font-family: "sourcesansprosemibold", "Source Sans Pro Semibold", "Source Sans Bold", sans-serif; }
 h1 { color: rgba(0, 69, 166, 1); font-family: 'merriweatherbold', serif; line-height: 125%; }
@@ -93,7 +92,7 @@ nav .container, .overlay > .container:first-child { position: relative; height: 
 /* Links */
 
 a, a:visited { position: relative; text-decoration: none; outline: none; }
-a.link::after { position: absolute; top: 100%; left: 0; width: 100%; height: 1px; box-sizing: border-box; background-color: rgba(255, 255, 255, 1); content: ''; opacity: 0; transition: opacity 0.3s, transform 0.3s; transform: translateY(4px);
+a.link::after { position: absolute; top: 100%; left: 0; width: 100%; height: 1px; box-sizing: border-box; background-color: rgba(71, 75, 76, 1); content: ''; opacity: 0; transition: opacity 0.3s, transform 0.3s; transform: translateY(4px);
 }
 a.link:hover::after, a.link:focus::after { opacity: 1; transform: translateY(0px); }
 
@@ -114,16 +113,55 @@ header .container { position: relative; height: auto; transition: left 1s ease; 
 header p { font-size: 1.2em; line-height: 150%; }
 header button, header .button { font-size: 24px; }
 
-/* Section */
+/* Sections */
 
 section { display: inline-block; width: 100%; }
 section > .container { text-align: left; }
 section + section .container, section .container + .container { margin-top: 0; }
 
+/* Section: Showcase */
+
+section.showcase { margin-bottom: -5px; background-image: url(../images/interface/bg-showcase.png); background-position: top center; background-repeat: repeat; background-color: transparent; border-bottom: 5px solid rgba(0, 69, 166, 1); }
+section.showcase .container { margin: 4% auto 2% auto; }
+section.showcase .announcement > p::before { content: url(../images/interface/icon-announcement.png); position: relative; top: 15px; left: -10px; }
+
+/* Section: Press */
+
+section.press { background-color: white; }
+section.press .container { margin: 4% auto 0 auto; }
+section.press .message { width: 80%; margin: 0 auto; }
+section.press .message img { float: left; width: auto; margin: 0 4% 4% 0; }
+section.press .message p { position: relative; top: -5px; background-position: top left; background-repeat: no-repeat; background-color: transparent; }
+section.press .message i { float: right; margin-top: 1%; color: rgba(0, 212, 115, 1); font-family: "sourcesansprosemibold", "Source Sans Pro Semibold", "Source Sans Bold", sans-serif; font-size: 1.25em; }
+
+/* Section: Promotion */
+
+section.promotion { padding: 2% 0; background-color: rgba(0, 212, 115, 1); }
+section.promotion .container { margin-bottom: 0; }
+section.promotion .container > div { float: left; width: 75%; margin: 0; background-position: left center; background-size: contain; background-repeat: no-repeat; background-color: transparent; }
+section.promotion h1, section.promotion p { color: white; margin-top: .1em !important; }
+section.promotion button, section.promotion .button { float: right; margin: 0; border-radius: 0; background-color: rgba(0, 69, 166, .25); box-shadow: none; }
+section.promotion button:hover, section.promotion .button:hover { background-color: rgba(0, 69, 166, 1); }
+section.promotion .handshake { height: 60px; padding-left: 110px; background-image: url(../images/interface/icon-handshake.png); }
+
 /* Footer */
 
-footer { display: inline-table; position: absolute; overflow: hidden; bottom: 0; left: 0; right: 0; width: 100%; background-color: rgba(255, 255, 255, 1); border-top: 5px solid rgba(0, 69, 166, 1); }
-footer, footer .container, footer .promo { height: 250px; }
+footer { display: inline-table; position: absolute; overflow: hidden; bottom: 0; left: 0; right: 0; width: 100%; font-size: 0.85em; background-color: rgba(255, 255, 255, 1); border-bottom: 5px solid rgba(0, 69, 166, 1); }
+footer, footer .container { height: 350px; }
+footer b { color: rgba(0, 69, 166, 1); }
+footer a { color: rgba(71, 75, 76, 1); }
+footer .information { position: relative; height: 250px; }
+footer .left, footer .middle, footer .right { position: absolute; bottom: 30px; vertical-align: bottom; }
+footer .left { float: left; left: 0; width: 35%; text-align: right; }
+footer .middle { float: left; left: 50%; margin-left: -15%; width: 30%; text-align: middle; }
+footer .middle a { display: inline-block; }
+footer .middle a:first-child { margin-bottom: 5%; }
+footer .right { float: left; right: 0; width: 35%; text-align: left; }
+footer .partners { width: 100%; height: 100px; text-align: center; border-top: 1px dashed rgba(0, 0, 0, .15); }
+footer .partners > a { display: inline-block; margin-top: 25px;  margin-right: 2%; margin-bottom: 25px; height: 50px; filter: grayscale(80%); opacity: .5; transition: all .25s ease; }
+footer .partners > a:last-child { margin-right: 0; }
+footer .partners > a:hover { filter: grayscale(0); opacity: 1; }
+footer .partners > a img { height: 100%; }
 
 /* Items */
 
