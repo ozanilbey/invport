@@ -77,16 +77,26 @@
 </head>
 <body id="<?php echo $main; ?>"<?php if(!empty($sub)) { echo ' class="'.$sub.'"'; } ?>>
     <nav>
-        <div class="menu container">
-            <a class="identity active" href="#/">
-                <img src="<?php echo $root; ?>/assets/images/identity/logo.png">
-            </a>
-            <a href="#/<?php echo $root; ?>/nedir">NEDİR?</a>
-            <a href="#/<?php echo $root; ?>/projeler">PROJELER</a>
-            <a href="#/<?php echo $root; ?>/haberler">HABERLER</a>
-            <a href="#/<?php echo $root; ?>/iletisim">İLETİŞİM</a>
-            <a href="#/<?php echo $root; ?>/uyelik">ÜYE OL</a>
-            <a href="#/<?php echo $root; ?>/giris">GİRİŞ YAP</a>
+        <div class="navigation container">
+            <div class="menu">
+                <a class="identity active" href="#/">
+                    <img src="<?php echo $root; ?>/assets/images/identity/logo.png">
+                </a>
+                <a href="#/<?php echo $root; ?>/nedir">NEDİR?</a>
+                <a href="#/<?php echo $root; ?>/projeler">PROJELER</a>
+                <a href="#/<?php echo $root; ?>/haberler">HABERLER</a>
+                <a href="#/<?php echo $root; ?>/iletisim">İLETİŞİM</a>
+                <a href="#/<?php echo $root; ?>/uyelik">ÜYE OL</a>
+                <a href="#/<?php echo $root; ?>/giris">GİRİŞ YAP</a>
+                <div class="submenu">
+                    <div class="arrow"> </div>
+                    <a href="#">Firma Profili</a>
+                    <a href="#">Yayınlanan Projeler</a>
+                    <a href="#">Çözüm Önerileri</a>
+                    <a href="#">Yeni Proje</a>
+                    <a href="#">Çıkış Yap</a>
+                </div>
+            </div>
             <a class="switch" href="#">
                 <img class="menu-icon" src="<?php echo $root; ?>/assets/images/interface/icon_menu.png">
                 <img class="close-icon" src="<?php echo $root; ?>/assets/images/interface/icon_close.png">
@@ -133,9 +143,9 @@
                 </div>
             </div>
             <div class="partners">
-                <a href="https://"><img src="<?php echo $root; ?>/assets/images/logos/logo-otek.png" /></a>
-                <a href="https://"><img src="<?php echo $root; ?>/assets/images/logos/logo-ettom.png" /></a>
-                <a href="https://"><img src="<?php echo $root; ?>/assets/images/logos/logo-eso.png" /></a>
+                <a href="http://www.otekteknoloji.com.tr"><img src="<?php echo $root; ?>/assets/images/logos/logo-otek.png" /></a>
+                <a href="https://ettom.ogu.edu.tr"><img src="<?php echo $root; ?>/assets/images/logos/logo-ettom.png" /></a>
+                <a href="http://www.eso.org.tr"><img src="<?php echo $root; ?>/assets/images/logos/logo-eso.png" /></a>
             </div>
         </div>
     </footer>

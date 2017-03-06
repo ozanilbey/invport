@@ -2,10 +2,10 @@
     <div class="container">
         <h1>Aradığınız inovatif fikir uzaklarda değil!</h1>
         <p>Açık İnovasyon programı ile çözüm sahiplerinin fikirleri, firmaların inovasyon ihtiyacına cevap veriyor. Düşünceler iş fikirlerine, iş fikirleri projelere, projeler ürünlere dönüşüyor!</p>
-        <button>
+        <a class="button" role="button">
             <img src="assets/images/interface/icon-browse.png" />
             PROJELERİ GÖR
-        </button>
+        </a>
     </div>
 </header>
 <section class="showcase">
@@ -86,6 +86,7 @@
             <b>YAYINDA</b>
         </div>
     </div>
+    <a class="bottom button" role="button">TÜMÜNÜ GÖRÜNTÜLE</a>
 </section>
 <section class="press">
     <div class="container">
@@ -103,6 +104,6 @@
             <h1>Ben de varım diyorsan...</h1>
             <p>Hemen üyeliğini oluşturup bir projeye katıl!</p>
         </div>
-        <button>HEMEN ÜYE OL!</button>
+        <a class="button" role="button">HEMEN ÜYE OL!</a>
     </div>
 </section>
