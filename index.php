@@ -55,12 +55,12 @@
     ?></title>
     <link rel="icon" type="image/png" href="<?php echo $root; ?>/assets/images/identity/inoport-icon.png">
     
-    <link type="text/css" rel="stylesheet" href="<?php echo $root; ?>/assets/styles/reset.css">
-    <link type="text/css" rel="stylesheet" href="<?php echo $root; ?>/assets/styles/generic.css">
+    <link type="text/css" rel="stylesheet" charset="utf-8" href="<?php echo $root; ?>/assets/styles/reset.css">
+    <link type="text/css" rel="stylesheet" charset="utf-8" href="<?php echo $root; ?>/assets/styles/generic.css">
     <?php
         $file = 'assets/styles/'.$main.'.css';
         if (file_exists($file) == true) {
-            print '<link type="text/css" rel="stylesheet" href="'.$root.'/assets/styles/'.$main.'.css">';
+            print '<link type="text/css" rel="stylesheet" charset="utf-8" href="'.$root.'/assets/styles/'.$main.'.css">';
         }
     ?>
     <!--[if lt IE 9]>
@@ -79,11 +79,11 @@
     <nav>
         <div class="navigation container">
             <div class="menu">
-                <a class="identity active" href="#/">
+                <a class="identity active" href="<?php echo $root; ?>">
                     <img src="<?php echo $root; ?>/assets/images/identity/logo.png">
                 </a>
                 <a href="#/<?php echo $root; ?>/nedir">NEDİR?</a>
-                <a href="#/<?php echo $root; ?>/projeler">PROJELER</a>
+                <a href="<?php echo $root; ?>/projeler">PROJELER</a>
                 <a href="#/<?php echo $root; ?>/haberler">HABERLER</a>
                 <a href="#/<?php echo $root; ?>/iletisim">İLETİŞİM</a>
                 <a href="#/<?php echo $root; ?>/uyelik">ÜYE OL</a>

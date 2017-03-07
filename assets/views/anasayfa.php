@@ -8,12 +8,14 @@
         </a>
     </div>
 </header>
-<section class="showcase">
-    <div class="announcement">
+<section class="announcement">
+    <div class="container">
         <p>Göz Hastaneleri için Robotik Kol proje yarışmasının kazananları açıklandı!</p>
     </div>
+</section>
+<section class="showcase">
     <div class="cards container">
-        <div class="card item">
+        <div class="card item yayindaki-projeler">
             <a href="#">
                 <img src="<?php echo $root; ?>/assets/images/icons/saglik.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
@@ -25,7 +27,7 @@
             </a>
             <b>YAYINDA</b>
         </div>
-        <div class="card item">
+        <div class="card item yayindaki-projeler">
             <a href="#">
                 <img src="<?php echo $root; ?>/assets/images/icons/tasarim-mimari.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
@@ -37,7 +39,7 @@
             </a>
             <b>YAYINDA</b>
         </div>
-        <div class="card item">
+        <div class="card item yayindaki-projeler">
             <a href="#">
                 <img src="<?php echo $root; ?>/assets/images/icons/matematik-istatistik.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
@@ -49,7 +51,7 @@
             </a>
             <b>YAYINDA</b>
         </div>
-        <div class="card item">
+        <div class="card item yayindaki-projeler">
             <a href="#">
                 <img src="<?php echo $root; ?>/assets/images/icons/fizik.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
@@ -61,7 +63,7 @@
             </a>
             <b>YAYINDA</b>
         </div>
-        <div class="card item">
+        <div class="card item yayindaki-projeler">
             <a href="#">
                 <img src="<?php echo $root; ?>/assets/images/icons/isgelistirme.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
@@ -73,7 +75,7 @@
             </a>
             <b>YAYINDA</b>
         </div>
-        <div class="card item">
+        <div class="card item yayindaki-projeler">
             <a href="#">
                 <img src="<?php echo $root; ?>/assets/images/icons/bilgisayarmuhendisligi.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
