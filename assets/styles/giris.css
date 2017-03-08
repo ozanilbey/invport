@@ -1,0 +1,8 @@
+header { height: 100%; min-height: inherit; }
+.login { display: inline-block; width: 40%; margin-top: 4%; }
+.login > a.option { display: inline-block; float: left; width: 50%; padding: 2% 0; color: rgba(0, 212, 115, 1); background-color: rgba(0, 212, 115, 0); }
+.login > a.option.active { color: rgba(255, 255, 255, 1); background-color: rgba(0, 212, 115, 1); }
+.login .form { display: inline-block; width: 100%; margin-bottom: 1%; padding: 8%; background-color: rgba(0, 212, 115, 1); }
+.login .form input { display: inline-block; width: 100%; margin-bottom: 4%; padding: 3% 5%; box-sizing: border-box; }
+.login .form button { display: inline-block; width: 100%; margin: 0; padding: 5%; color: rgba(255, 255, 255, 1); box-sizing: border-box; }
+.login a.reminder { float: right; font-size: 0.85em; text-align: right; opacity: .75; }

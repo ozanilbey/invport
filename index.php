@@ -79,15 +79,22 @@
     <nav>
         <div class="navigation container">
             <div class="menu">
-                <a class="identity active" href="<?php echo $root; ?>">
+                <a class="anasayfa identity" href="<?php echo $root; ?>">
                     <img src="<?php echo $root; ?>/assets/images/identity/logo.png">
                 </a>
-                <a href="#/<?php echo $root; ?>/nedir">NEDİR?</a>
-                <a href="<?php echo $root; ?>/projeler">PROJELER</a>
-                <a href="#/<?php echo $root; ?>/haberler">HABERLER</a>
-                <a href="#/<?php echo $root; ?>/iletisim">İLETİŞİM</a>
-                <a href="#/<?php echo $root; ?>/uyelik">ÜYE OL</a>
-                <a href="#/<?php echo $root; ?>/giris">GİRİŞ YAP</a>
+                <a class="nedir" href="#/<?php echo $root; ?>/nedir">NEDİR?</a>
+                <a class="projeler" href="<?php echo $root; ?>/projeler">PROJELER</a>
+                <a class="haberler" href="#/<?php echo $root; ?>/haberler">HABERLER</a>
+                <a class="iletisim" href="#/<?php echo $root; ?>/iletisim">İLETİŞİM</a>
+                <!-- if not logged -->
+                <a class="uyelik" href="#/<?php echo $root; ?>/uyelik">ÜYE OL</a>
+                <a class="giris" href="#/<?php echo $root; ?>/giris">GİRİŞ YAP</a>
+                <!-- if logged as company
+                <a class="firma" href="#/<?php echo $root; ?>/firma">TÜLOMSAŞ</a>
+                -->
+                <!-- if logged as user
+                <a class="uye" href="#/<?php echo $root; ?>/uye">OZAN İ. YILMAZ</a>
+                -->
                 <div class="submenu">
                     <div class="arrow"> </div>
                     <a href="#">Firma Profili</a>

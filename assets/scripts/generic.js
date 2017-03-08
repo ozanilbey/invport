@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    var main = $('body').attr('id');
+    $('.menu > a').removeClass('active');
+    $('.menu > a.' + main).addClass('active');
     var viewportHeight;
     viewportHeight = $(window).height();
     $('body').css('min-height', viewportHeight + 'px');
@@ -12,17 +15,11 @@ $(document).ready(function() {
     } else {
         $('nav').css('background-color', 'rgba(255, 255, 255, 1)').css('box-shadow', '0 1px 5px rgba(0, 0, 0, .05), 0 1px 3px rgba(0, 0, 0, .1)');
     }
-    $('.menu > a:not(:last)').click(function(){
-        $('.menu > a').removeClass('active');
-        $(this).addClass('active');
-        $('.menu > a').last().removeClass('clicked');
-        $('.submenu').removeClass('open');
-    });
-    $('.menu > a').last().click(function(){
+    $('body.logged .menu > a').last().click(function(){
         $('.menu > a').last().toggleClass('clicked');
         $('.submenu').toggleClass('open');
     });
-    $('.submenu > a').click(function(){
+    $('body.logged .submenu > a').click(function(){
         $('.menu > a').last().toggleClass('clicked');
         $('.submenu').toggleClass('open');
     });
