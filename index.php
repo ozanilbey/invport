@@ -87,8 +87,8 @@
                 <a class="haberler" href="#/<?php echo $root; ?>/haberler">HABERLER</a>
                 <a class="iletisim" href="#/<?php echo $root; ?>/iletisim">İLETİŞİM</a>
                 <!-- if not logged -->
-                <a class="uyelik" href="#/<?php echo $root; ?>/uyelik">ÜYE OL</a>
-                <a class="giris" href="#/<?php echo $root; ?>/giris">GİRİŞ YAP</a>
+                <a class="uyelik" href="<?php echo $root; ?>/uyelik">ÜYE OL</a>
+                <a class="giris" href="<?php echo $root; ?>/giris">GİRİŞ YAP</a>
                 <!-- if logged as company
                 <a class="firma" href="#/<?php echo $root; ?>/firma">TÜLOMSAŞ</a>
                 -->

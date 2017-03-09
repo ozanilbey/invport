@@ -106,6 +106,6 @@
             <h1>Ben de varım diyorsan...</h1>
             <p>Hemen üyeliğini oluşturup bir projeye katıl!</p>
         </div>
-        <a class="button" role="button">HEMEN ÜYE OL!</a>
+        <a href="<?php echo $root; ?>/uyelik" class="button" role="button">HEMEN ÜYE OL!</a>
     </div>
 </section>

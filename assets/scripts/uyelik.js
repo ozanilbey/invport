@@ -1,7 +1,24 @@
 $(document).ready(function() {
+    
     $('.sign > a.option').click(function(){
         $('.sign > a.option').removeClass('active');
         $(this).addClass('active');
+    });
+    
+    var fullnameApproved = false;
+    
+    var requiredFullnameLength = 6;
+    
+    $('#fullname').on('keyup', function() {
+        if($('#fullname').val().length >= requiredFullnameLength) {
+            fullnameApproved = true;
+            $('#fullname').addClass('valid');
+            $('#fullname').removeClass('invalid');
+        } else {
+            fullnameApproved = false;
+            $('#fullname').addClass('invalid');
+            $('#fullname').removeClass('valid');
+        }
     });
     
     var emailApproved = false;
@@ -21,7 +38,6 @@ $(document).ready(function() {
         }
     });
     
-    
     var passwordApproved = false;
     
     var requiredPasswordLength = 6;
@@ -38,11 +54,31 @@ $(document).ready(function() {
         }
     });
     
-    $('#email, #password').keyup(function() {
-        if (emailApproved == true && passwordApproved == true) {
+    var authorizationApproved = false;
+    
+    $('.checkbox .boolean').click(function() {
+        if ($(this).hasClass('true')) {
+            $(this).parent().children('input[type="checkbox"]').removeAttr('checked');
+            authorizationApproved = false;
+            $('#submit').prop('disabled', true);
+        } else {
+            $(this).parent().children('input[type="checkbox"]').attr('checked', true);
+            authorizationApproved = true;
+            if(fullnameApproved == true && emailApproved == true && passwordApproved == true) {
+                $('#submit').removeAttr('disabled');
+            } else {
+                $('#submit').prop('disabled', true);
+            }
+        }
+        $(this).toggleClass('true');
+    });
+    
+    $('#fullname, #email, #password').keyup(function() {
+        if(fullnameApproved == true && emailApproved == true && passwordApproved == true && authorizationApproved == true) {
             $('#submit').removeAttr('disabled');
         } else {
             $('#submit').prop('disabled', true);
         }
     });
+    
 });

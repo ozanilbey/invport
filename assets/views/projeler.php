@@ -174,6 +174,6 @@
             <h1>Çözüm Sende!</h1>
             <p>İnovatif fikirlerini firmalarla paylaş, kazan!</p>
         </div>
-        <a class="button" role="button">HEMEN ÜYE OL!</a>
+        <a href="<?php echo $root; ?>/uyelik" class="button" role="button">HEMEN ÜYE OL!</a>
     </div>
 </section>
