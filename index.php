@@ -75,7 +75,7 @@
         }
     ?>
 </head>
-<body id="<?php echo $main; ?>"<?php if(!empty($sub)) { echo ' class="'.$sub.'"'; } ?>>
+<body id="<?php echo $main; ?>"<?php if(!empty($sub)) { echo ' class="'.$sub.' subpage"'; } ?>>
     <nav>
         <div class="navigation container">
             <div class="menu">

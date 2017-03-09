@@ -1,11 +1,7 @@
 /* TEMPORARY */
 
-
-
 button img, .button img { display: inline-block; position: relative; height: 30px; margin: -5px 5px -5px 0; vertical-align: middle; }
 button > img + p, .button > img + p { line-height: 20px; }
-
-
 
 /* Defaults */
 
@@ -178,15 +174,17 @@ section.promotion .container > div { float: left; width: 75%; margin: 0; backgro
 section.promotion h1, section.promotion p { color: white; margin-top: .1em !important; }
 section.promotion button, section.promotion .button { float: right; margin: 0; border-radius: 0; background-color: rgba(0, 69, 166, .25); box-shadow: none; }
 section.promotion button:hover, section.promotion .button:hover { background-color: rgba(0, 69, 166, 1); }
-section.promotion .handshake { height: 60px; padding-left: 110px; background-image: url(../images/interface/icon-handshake.png); }
-section.promotion .puzzle { height: 60px; padding-left: 80px; background-image: url(../images/interface/icon-puzzle.png); background-position: -5px 0; background-size: auto; }
+section.promotion .container > .handshake { height: 60px; padding-left: 110px; background-image: url(../images/interface/icon-handshake.png); }
+section.promotion .container > .puzzle { height: 70px; margin: -5px 0; padding: 5px 0; padding-left: 90px; background-image: url(../images/interface/icon-puzzle.png); }
+section.promotion .container > .bulb { height: 80px; margin: -10px 0; padding: 10px 0; padding-left: 90px; background-image: url(../images/interface/icon-bulb.png); }
 
 /* Footer */
 
 footer { display: inline-table; position: absolute; overflow: hidden; bottom: 0; left: 0; right: 0; width: 100%; font-size: 0.85em; background-color: rgba(255, 255, 255, 1); border-bottom: 5px solid rgba(0, 69, 166, 1); }
 footer, footer .container { height: 350px; }
 footer b { color: rgba(0, 69, 166, 1); }
-footer a { color: rgba(71, 75, 76, 1); }
+footer a, footer a:visited, footer a.link, footer a.link:visited { color: rgba(71, 75, 76, 1); }
+footer a.link::after { background-color: rgba(71, 75, 76, 1); }
 footer .information { position: relative; height: 250px; }
 footer .left, footer .middle, footer .right { position: absolute; bottom: 30px; vertical-align: bottom; }
 footer .left { float: left; left: 0; width: 35%; text-align: right; }

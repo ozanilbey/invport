@@ -13,7 +13,7 @@
                         <input id="password" type="text" name="password" size="30" placeholder="Şifreni oluştur">
                         <div class="checkbox">
                             <div class="boolean"></div>
-                            <a href="" target="_blank">Üyelik Sözleşmesi</a>'ni okudum ve kabul ediyorum.
+                            <a class="link" href="" target="_blank">Üyelik Sözleşmesi</a>'ni okudum ve kabul ediyorum.
                             <input id="authorization" type="checkbox" name="authorization" />
                         </div>
                         <button id="submit" class="submit on" type="submit" disabled="">GİRİŞ YAP</button>
