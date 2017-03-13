@@ -1,29 +1,39 @@
 {
     "anasayfa": {
-        "icsayfa": "İç Sayfa"
+        "title": "invport"
     },
     "projeler": {
-        "icsayfa": "İç Sayfa"
+        "title": "Projeler",
+        "proje": "Örnek Proje"
     },
     "haberler": {
-        "icsayfa": "İç Sayfa"
+        "title": "Haberler",
+        "haber": "Örnek Haber"
     },
     "iletisim": {
-        "icsayfa": "İç Sayfa"
+        "title": "İletişim"
     },
     "uyelik": {
-        "icsayfa": "İç Sayfa"
+        "title": "Üye Ol"
     },
     "giris": {
-        "icsayfa": "İç Sayfa"
+        "title": "Giriş"
     },
     "firma": {
-        "icsayfa": "İç Sayfa"
+        "title": "Firma",
+        "profil": "Firma Profili",
+        "projeler": "Yayınlanan Projeler",
+        "oneriler": "Çözüm Önerilerim",
+        "yeni": "Yeni Proje"
     },
     "uye": {
-        "icsayfa": "İç Sayfa"
+        "title": "Üye",
+        "profil": "Profilim",
+        "projeler": "Katıldığım Projeler",
+        "oneriler": "Çözüm Önerilerim"
     },
     "hata": {
+        "title": "Hata",
         "404": "Sayfa bulunamadı!"
     }
 }

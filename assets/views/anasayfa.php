@@ -16,7 +16,7 @@
 <section class="showcase">
     <div class="cards container">
         <div class="card item yayindaki-projeler">
-            <a href="#">
+            <a href="<?php echo $root; ?>/projeler/proje">
                 <img src="<?php echo $root; ?>/assets/images/icons/saglik.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli eğitim almaları için gereken eğitimin tabletler ile verilmesini amaçlayan...</p>
@@ -28,7 +28,7 @@
             <b>YAYINDA</b>
         </div>
         <div class="card item yayindaki-projeler">
-            <a href="#">
+            <a href="<?php echo $root; ?>/projeler/proje">
                 <img src="<?php echo $root; ?>/assets/images/icons/tasarim-mimari.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli eğitim almaları için gereken eğitimin tabletler ile verilmesini amaçlayan...</p>
@@ -40,7 +40,7 @@
             <b>YAYINDA</b>
         </div>
         <div class="card item yayindaki-projeler">
-            <a href="#">
+            <a href="<?php echo $root; ?>/projeler/proje">
                 <img src="<?php echo $root; ?>/assets/images/icons/matematik-istatistik.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli eğitim almaları için gereken eğitimin tabletler ile verilmesini amaçlayan...</p>
@@ -52,7 +52,7 @@
             <b>YAYINDA</b>
         </div>
         <div class="card item yayindaki-projeler">
-            <a href="#">
+            <a href="<?php echo $root; ?>/projeler/proje">
                 <img src="<?php echo $root; ?>/assets/images/icons/fizik.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli eğitim almaları için gereken eğitimin tabletler ile verilmesini amaçlayan...</p>
@@ -64,7 +64,7 @@
             <b>YAYINDA</b>
         </div>
         <div class="card item yayindaki-projeler">
-            <a href="#">
+            <a href="<?php echo $root; ?>/projeler/proje">
                 <img src="<?php echo $root; ?>/assets/images/icons/isgelistirme.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli eğitim almaları için gereken eğitimin tabletler ile verilmesini amaçlayan...</p>
@@ -76,7 +76,7 @@
             <b>YAYINDA</b>
         </div>
         <div class="card item yayindaki-projeler">
-            <a href="#">
+            <a href="<?php echo $root; ?>/projeler/proje">
                 <img src="<?php echo $root; ?>/assets/images/icons/bilgisayarmuhendisligi.png" />
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli eğitim almaları için gereken eğitimin tabletler ile verilmesini amaçlayan...</p>

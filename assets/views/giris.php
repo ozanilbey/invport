@@ -3,8 +3,8 @@
         <h1>Hoşgeldin! Seni özlemiştik...</h1>
         <p>Üyelik bilgilerinle giriş yap. Kayıtlı kullanıcı değilsen <a class="link" href="<?php echo $root; ?>/uyelik">buradan üye ol</a>.</p>
         <div class="sign">
-            <a class="option active" href="#">Fikir Sahibi Girişi</a>
-            <a class="option" href="#">Firma Girişi</a>
+            <a id="uye" class="option active" href="#">Fikir Sahibi Girişi</a>
+            <a id="firma" class="option" href="#">Firma Girişi</a>
             <div class="form">
                 <form name="loginForm" id="loginForm" method="post" action="" novalidate="">
                     <fieldset>
@@ -18,3 +18,14 @@
         </div>
     </div>
 </header>
+<!-- The code below is not to be published in working copy -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('button').click(function(e){
+            e.preventDefault();
+            var root = '<?php echo $root; ?>';
+            var user = $('.option.active').attr('id');
+            window.location.replace(root + '/' + user + '/profil');
+        });
+    });
+</script>

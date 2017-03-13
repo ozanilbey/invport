@@ -3,5 +3,5 @@ RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/\.]+)/?$ index.php?main=$1 [L]
-RewriteRule ^([^/\.]+)/([^/\.]+)/?$ index.php?main=$1&sub=$2 [L]
+RewriteRule ^([^/\.]+)/?$ index.php?main=$1&%{QUERY_STRING} [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/?$ index.php?main=$1&sub=$2&%{QUERY_STRING} [L]

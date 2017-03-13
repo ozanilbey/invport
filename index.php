@@ -2,6 +2,7 @@
     include_once('assets/config/directives.php');
     $main = $_GET['main'];
     $sub = $_GET['sub'];
+    $user = $_GET['kullanici'];
     if(empty($main)) {
         $main = 'anasayfa';
     } else {
@@ -36,24 +37,24 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
     <meta property="og:title" content="<?php
-            if (!empty($sub)) {
-                echo $sitemap[$main][$sub].' | ';
-            }
-            echo $main;
+        if (!empty($sub)) {
+            echo $sitemap[$main][$sub].' | ';
+        }
+        echo $sitemap[$main]['title'];
     ?>" />
-    <meta property="og:type" content="profile" />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="<?php echo $root.'/'.$main; if (!empty($sub)) { echo '/'.$sub; } ?>" />
-    <meta property="og:image" content="<?php if (!empty($sub)) { echo $root.'/assets/content/'.$main.'/'.$sub.'/thumbnail.png'; } else { echo $root.'/assets/images/thumbnails/'.$main.'.png'; } ?>" />
+    <meta property="og:image" content="<?php if (!empty($sub)) { echo $root.'/assets/content/'.$main.'/'.$sub.'/thumbnail.png'; } else { echo $root.'/assets/images/identity/thumbnail.png'; } ?>" />
     <meta property="og:description" content="" />
     <meta property="og:locale" content="tr_TR" />
     <meta property="og:site_name" content="" />
     <title><?php
-            if (!empty($sub)) {
-                echo $sitemap[$main][$sub].' | ';
-            }
-            echo $main;
+        if (!empty($sub)) {
+            echo $sitemap[$main][$sub].' | ';
+        }
+        echo $sitemap[$main]['title'];
     ?></title>
-    <link rel="icon" type="image/png" href="<?php echo $root; ?>/assets/images/identity/inoport-icon.png">
+    <link rel="icon" type="image/png" href="<?php echo $root; ?>/assets/images/identity/icon.png">
     
     <link type="text/css" rel="stylesheet" charset="utf-8" href="<?php echo $root; ?>/assets/styles/reset.css">
     <link type="text/css" rel="stylesheet" charset="utf-8" href="<?php echo $root; ?>/assets/styles/generic.css">
@@ -75,7 +76,20 @@
         }
     ?>
 </head>
-<body id="<?php echo $main; ?>"<?php if(!empty($sub)) { echo ' class="'.$sub.' subpage"'; } ?>>
+<?php
+    $class = '';
+    if(!empty($user)) {
+        $class = 'logged';
+    }
+    if(!empty($sub)) {
+        if($class == '') {
+            $class = $sub.' subpage';
+        } else {
+            $class = $class.' '.$sub.' subpage';
+        }
+    }
+?>
+<body id="<?php echo $main; ?>" class="<?php echo $class; ?>"><?php echo $kullanici; ?>
     <nav>
         <div class="navigation container">
             <div class="menu">
@@ -86,23 +100,31 @@
                 <a class="projeler" href="<?php echo $root; ?>/projeler">PROJELER</a>
                 <a class="haberler" href="#/<?php echo $root; ?>/haberler">HABERLER</a>
                 <a class="iletisim" href="#/<?php echo $root; ?>/iletisim">İLETİŞİM</a>
-                <!-- if not logged -->
-                <a class="uyelik" href="<?php echo $root; ?>/uyelik">ÜYE OL</a>
-                <a class="giris" href="<?php echo $root; ?>/giris">GİRİŞ YAP</a>
-                <!-- if logged as company
-                <a class="firma" href="#/<?php echo $root; ?>/firma">TÜLOMSAŞ</a>
-                -->
-                <!-- if logged as user
-                <a class="uye" href="#/<?php echo $root; ?>/uye">OZAN İ. YILMAZ</a>
-                -->
-                <div class="submenu">
-                    <div class="arrow"> </div>
-                    <a href="#">Firma Profili</a>
-                    <a href="#">Yayınlanan Projeler</a>
-                    <a href="#">Çözüm Önerileri</a>
-                    <a href="#">Yeni Proje</a>
-                    <a href="#">Çıkış Yap</a>
-                </div>
+                <?php
+                    if ($user == 'firma') {
+                        echo '<a class="firma" href="#">TÜLOMSAŞ</a>
+                        <div class="submenu">
+                            <div class="arrow"> </div>
+                            <a href="'.$root.'/'.$user.'/profil">Firma Profili</a>
+                            <a href="'.$root.'/'.$user.'/projeler">Yayınlanan Projeler</a>
+                            <a href="'.$root.'/'.$user.'/oneriler">Çözüm Önerileri</a>
+                            <a href="'.$root.'/'.$user.'/yeni">Yeni Proje</a>
+                            <a href="'.$root.'">Çıkış Yap</a>
+                        </div>';
+                    } else if ($user == 'uye') {
+                        echo '<a class="uye" href="#">OZAN İ. YILMAZ</a>
+                        <div class="submenu">
+                            <div class="arrow"> </div>
+                            <a href="'.$root.'/'.$user.'/profil">Profilim</a>
+                            <a href="'.$root.'/'.$user.'/projeler">Katıldığım Projeler</a>
+                            <a href="'.$root.'/'.$user.'/oneriler">Çözüm Önerilerim</a>
+                            <a href="'.$root.'">Çıkış Yap</a>
+                        </div>';
+                    } else {
+                        echo '<a class="uyelik" href="'.$root.'/uyelik">ÜYE OL</a>
+                        <a class="giris" href="'.$root.'/giris">GİRİŞ YAP</a>';
+                    }
+                ?>
             </div>
             <a class="switch" href="#">
                 <img class="menu-icon" src="<?php echo $root; ?>/assets/images/interface/icon_menu.png">
