@@ -1,13 +1,1 @@
 header { background-image: url('../images/headers/projeler.png'); }
-body.subpage header { background-image: url('../images/interface/bg-header.png'); border-bottom: none; }
-body.subpage header .container > img.icon { width: auto; margin: 0 auto; }
-body.subpage section.details { padding: 2% 0; color: white; background-color: rgba(0, 212, 115, 1); }
-body.subpage section.details .container { margin-top: 0; margin-bottom: 0; }
-body.subpage section.details .container > p { float: left; width: 33.333%; text-align: center; }
-body.subpage section.details .container > p:first-of-type { text-align: left; }
-body.subpage section.details .container > p:last-of-type { text-align: right; }
-body.subpage section.details .container > p b { font-family: 'merriweatherbold', serif; }
-body.subpage section.information .container { padding-top: 4%; }
-body.subpage section.information .container > img, body.subpage section.information .container > ul { margin: 2% 0; }
-body.subpage section.information .container > h3 { margin-top: 2%; }
-section.showcase { border-bottom: none; }

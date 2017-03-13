@@ -54,7 +54,7 @@ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholde
 body { position: relative; padding-bottom: 350px; color: rgba(71, 75, 76, 1); font-family: 'sourcesansproregular', sans-serif; font-size: 16px; background-color: rgba(245, 247, 250, 1); }
 body, a, b, p, h1, h2, h3, h4, h5, h6, span, del, button, .button { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; }
 h1, h2, h3, h4, h5, h6, button, .button { font-family: "sourcesansprosemibold", "Source Sans Pro Semibold", "Source Sans Bold", sans-serif; }
-h1 { color: rgba(0, 69, 166, 1); font-family: 'merriweatherbold', serif; line-height: 125%; }
+h1 { color: rgba(0, 69, 166, 1); font-family: 'merriweatherbold', serif; line-height: 125%; margin-bottom: 1em; }
 h2 { color: rgba(0, 69, 166, 1); font-family: 'merriweatherbold', serif; line-height: 135%; }
 h3 { color: rgba(0, 212, 115, 1); line-height: 150%; }
 p { line-height: 135%; }
@@ -114,12 +114,16 @@ header > .container, section > .container { margin: 4% auto; }
 
 /* Header */
 
-header { display: inline-block; width: 100%; min-height: 640px; background-size: cover; background-position: bottom center; background-repeat: repeat-x; background-blend-mode: multiply; background-color: transparent; background-image: url('../images/interface/bg-header.png'); border-bottom: 5px solid rgba(0, 69, 166, 1); }
+header { display: inline-block; width: 100%; min-height: auto; background-size: cover; background-position: bottom center; background-repeat: repeat-x; background-blend-mode: multiply; background-color: transparent; background-image: url('../images/interface/bg-header.png'); border-bottom: 5px solid rgba(0, 69, 166, 1); }
 header a { display: inline; }
 header > .container > h1 { display: inline-block; margin: 3% 0; font-size: 36px; text-align: center; }
 header .container { position: relative; height: auto; transition: left 1s ease; }
 header p { font-size: 1.2em; line-height: 150%; }
 header button, header .button { font-size: 24px; }
+header.extended { min-height: 640px; }
+
+body.subpage header { background-image: url('../images/interface/bg-header.png'); border-bottom: none; }
+body.subpage header .container > img.icon { width: auto; margin: 0 auto; }
 
 /* Sections */
 
@@ -129,7 +133,7 @@ section + section .container, section .container + .container { margin-top: 0; }
 
 /* Section: Showcase */
 
-section.showcase { background-image: url(../images/interface/bg-showcase.png); background-position: top center; background-repeat: repeat; background-color: transparent; border-bottom: 5px solid rgba(0, 69, 166, 1); }
+section.showcase { background-image: url(../images/interface/bg-showcase.png); background-position: top center; background-repeat: repeat; background-color: transparent; }
 section.showcase > .container { margin: 4% auto 2% auto; }
 section.showcase button.bottom, section.showcase .button.bottom { margin-bottom: -5px; }
 
@@ -158,26 +162,45 @@ section.filter .dropdown a:first-child { height: 80px; line-height: 80px; backgr
 section.filter .dropdown.open a:first-child { background-image: url(../images/interface/arrow_up.png); }
 section.filter .dropdown a:first-child::before { font-family: "sourcesansprosemibold", "Source Sans Pro Semibold", "Source Sans Bold", sans-serif; }
 
+/* Section: Details */
+
+section.details { padding: 2% 0; color: white; background-color: rgba(0, 212, 115, 1); }
+section.details .container { margin-top: 0; margin-bottom: 0; }
+section.details .container > p { float: left; width: 33.333%; text-align: center; }
+section.details .container > p:first-of-type { text-align: left; }
+section.details .container > p:last-of-type { text-align: right; }
+section.details .container > p.single { float: none; width: 100%; text-align: center; }
+section.details .container > p b { font-family: 'merriweatherbold', serif; }
+
+/* Section: Information */
+
+section.information .container { padding-top: 4%; }
+section.information .container > img, body.subpage section.information .container > ul { margin: 2% 0; }
+section.information .container > h3 { margin-top: 2%; }
+
 /* Section: Press */
 
-section.press { background-color: white; }
+section.press { background-color: white; border-top: 5px solid rgba(0, 69, 166, 1); }
 section.press .container { margin: 4% auto 0 auto; }
 section.press .message { width: 80%; margin: 0 auto; }
 section.press .message img { float: left; width: auto; margin: 0 4% 4% 0; }
 section.press .message p { position: relative; top: -5px; background-position: top left; background-repeat: no-repeat; background-color: transparent; }
 section.press .message i { float: right; margin-top: 1%; color: rgba(0, 212, 115, 1); font-family: "sourcesansprosemibold", "Source Sans Pro Semibold", "Source Sans Bold", sans-serif; font-size: 1.25em; }
 
-/* Section: Promotion */
+/* Section: Action */
 
-section.promotion { padding: 2% 0; background-color: rgba(0, 212, 115, 1); }
-section.promotion .container { margin-bottom: 0; }
-section.promotion .container > div { float: left; width: 75%; margin: 0; background-position: left center; background-size: contain; background-repeat: no-repeat; background-color: transparent; }
-section.promotion h1, section.promotion p { color: white; margin-top: .1em !important; }
-section.promotion button, section.promotion .button { float: right; margin: 0; border-radius: 0; background-color: rgba(0, 69, 166, .25); box-shadow: none; }
-section.promotion button:hover, section.promotion .button:hover { background-color: rgba(0, 69, 166, 1); }
-section.promotion .container > .handshake { height: 60px; padding-left: 110px; background-image: url(../images/interface/icon-handshake.png); }
-section.promotion .container > .puzzle { height: 70px; margin: -5px 0; padding: 5px 0; padding-left: 90px; background-image: url(../images/interface/icon-puzzle.png); }
-section.promotion .container > .bulb { height: 80px; margin: -10px 0; padding: 10px 0; padding-left: 90px; background-image: url(../images/interface/icon-bulb.png); }
+section.action { padding: 2% 0; background-color: rgba(0, 212, 115, 1); }
+section.action .container { margin-bottom: 0; }
+section.action .container > div { float: left; width: 75%; margin: 0; background-position: left center; background-size: contain; background-repeat: no-repeat; background-color: transparent; }
+section.action .container > button, section.action .container > .button { float: right; margin-left: 1%; }
+section.action h1, section.action p { color: white; margin-top: .1em !important; margin-bottom: 0 !important; }
+section.action button, section.action .button { margin: 0; border-radius: 0; background-color: rgba(0, 69, 166, .25); box-shadow: none; }
+section.action button:hover, section.action .button:hover { background-color: rgba(0, 69, 166, 1); }
+section.action button.caution, section.action .button.caution { background-color: rgba(255, 0, 40, .25); }
+section.action button.caution:hover, section.action .button.caution:hover { background-color: rgba(255, 0, 40, 1); }
+section.action .container > .handshake { height: 60px; padding-left: 110px; background-image: url(../images/interface/icon-handshake.png); }
+section.action .container > .puzzle { height: 70px; margin: -5px 0; padding: 5px 0; padding-left: 90px; background-image: url(../images/interface/icon-puzzle.png); }
+section.action .container > .bulb { height: 80px; margin: -10px 0; padding: 10px 0; padding-left: 90px; background-image: url(../images/interface/icon-bulb.png); }
 
 /* Footer */
 
@@ -235,6 +258,23 @@ footer .partners > a img { height: 100%; }
 .card blockquote p:first-child { float: left; background-image: url(../images/interface/icon-timeleft.png); }
 .card blockquote p:last-child { float: right; background-image: url(../images/interface/icon-prize.png); }
 .card b { display: block; position: relative; box-sizing: border-box; left: 0; right: 0; bottom: 0; width: 100%; height: 10%; padding: 3%; color: white; text-align: center; background-color: rgba(0, 212, 115, 1); }
+
+/* Segments */
+
+.segment { margin-bottom: 2%; overflow: hidden; word-wrap: break-word; background-color: rgba(255, 255, 255, 1); border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); transition: all 0.3s cubic-bezier(.25,.8,.25,1); cursor: pointer; }
+.segment:hover { box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.24); }
+.segment.yayindaki-projeler a { border-left: 5px solid rgba(0, 212, 115, 1); }
+.segment.suresi-uzatilan-projeler a { border-left: 5px solid rgba(255, 180, 0, 1); }
+.segment.tamamlanan-projeler a { border-left: 5px solid rgba(255, 0, 40, 1); }
+.segment a { display: inline-block; float: left; box-sizing: border-box; width: 100%; padding: 2% 3%; }
+.segment img { float: left; margin: 0; }
+.segment h1 { width: 100%; margin-bottom: 0; line-height: 1.5em; text-align: left; overflow: hidden; }
+.segment p { width: 100%; height: 1.5em; color: rgba(71, 75, 76, .8); font-size: .85em; line-height: 1.5em; text-align: left; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.segment blockquote { display: inline-block; float: left; box-sizing: border-box; width: 100%; margin-top: 1%; color: rgba(0, 69, 166, 1); font-family: 'merriweatherbold', serif; font-size: .85em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.segment blockquote p { display: inline; margin-top: 0; margin-right: 5%; padding-left: 25px; padding-bottom: 2px; color: rgba(0, 69, 166, 1); font-size: inherit; text-align: left;  background-position: left center; background-repeat: no-repeat; background-color: transparent; }
+.segment blockquote p:first-child { background-image: url(../images/interface/icon-timeleft.png); }
+.segment blockquote p:last-child { background-image: url(../images/interface/icon-prize.png); }
+.segment b { display: block; position: relative; box-sizing: border-box; left: 0; right: 0; bottom: 0; width: 100%; height: 10%; padding: 3%; color: white; text-align: center; background-color: rgba(0, 212, 115, 1); }
 
 /* Buttons */
 

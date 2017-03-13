@@ -1,4 +1,4 @@
-<header class="extended">
+<header>
     <div class="container">
         <img class="icon" src="<?php echo $root; ?>/assets/images/icons/bilgisayarmuhendisligi.png">
         <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
@@ -32,10 +32,7 @@
 </section>
 <section class="action">
     <div class="container">
-        <div class="bulb">
-            <h1>Bir fikrin mi var?</h1>
-            <p>Hemen proje sunumunu oluşturmaya başla!</p>
-        </div>
-        <a href="<?php echo $root; ?>/uyelik" class="button" role="button">HEMEN KATIL!</a>
+        <a href="#" class="button" role="button">DEĞİŞİKLİKLERİ KAYDET</a>
+        <a href="#" class="caution button" role="button">PROJEYİ SİL</a>
     </div>
 </section>

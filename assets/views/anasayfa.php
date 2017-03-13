@@ -1,4 +1,4 @@
-<header>
+<header class="extended">
     <div class="container">
         <h1>Aradığınız inovatif fikir uzaklarda değil!</h1>
         <p>Açık İnovasyon programı ile çözüm sahiplerinin fikirleri, firmaların inovasyon ihtiyacına cevap veriyor. Düşünceler iş fikirlerine, iş fikirleri projelere, projeler ürünlere dönüşüyor!</p>
@@ -100,7 +100,7 @@
     </div>
     <img src="<?php echo $root; ?>/assets/images/interface/visual-pr.png" />
 </section>
-<section class="promotion">
+<section class="action">
     <div class="container">
         <div class="handshake">
             <h1>Ben de varım diyorsan...</h1>
