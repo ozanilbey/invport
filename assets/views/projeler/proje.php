@@ -7,9 +7,9 @@
 </header>
 <section class="details">
     <div class="container">
-        <p><b>Ödül:</b> 5500TL</p>
-        <p><b>Son Katılım:</b> Nisan 2017</p>
-        <p><b>Durum:</b> Aktif</p>
+        <p class="item"><b>Ödül:</b> 5500TL</p>
+        <p class="item"><b>Son Katılım:</b> Nisan 2017</p>
+        <p class="item"><b>Durum:</b> Aktif</p>
     </div>
 </section>
 <section class="information">

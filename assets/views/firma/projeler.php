@@ -13,7 +13,7 @@
     <div class="segments container">
         <h1>Yayınlanan Projeleriniz</h1>
         <div class="segment yayindaki-projeler secilmis-projeler">
-            <a href="<?php echo $root; ?>/projeler/proje">
+            <a href="<?php echo $root; ?>/firma/duzenle">
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli bir eğitim almaları için çocuklara gereken ve eksik kalan eğitimin tablet bilgisayarlar aracılığıyla evde verilmesini amaçlar.</p>
                 <blockquote>
@@ -23,7 +23,7 @@
             </a>
         </div>
         <div class="segment yayindaki-projeler secilmis-projeler">
-            <a href="<?php echo $root; ?>/projeler/proje">
+            <a href="<?php echo $root; ?>/firma/duzenle">
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli bir eğitim almaları için çocuklara gereken ve eksik kalan eğitimin tablet bilgisayarlar aracılığıyla evde verilmesini amaçlar.</p>
                 <blockquote>
@@ -33,7 +33,7 @@
             </a>
         </div>
         <div class="segment yayindaki-projeler secilmis-projeler">
-            <a href="<?php echo $root; ?>/projeler/proje">
+            <a href="<?php echo $root; ?>/firma/duzenle">
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Otizmli çocukların yoğun ve kaliteli bir eğitim almaları için çocuklara gereken ve eksik kalan eğitimin tablet bilgisayarlar aracılığıyla evde verilmesini amaçlar.</p>
                 <blockquote>
