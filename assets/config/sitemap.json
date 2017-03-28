@@ -25,14 +25,14 @@
         "ayarlar": "Firma Ayarları",
         "projeler": "Yayınlanan Projeler",
         "duzenle": "Yayınlanan Projeler",
-        "oneriler": "Çözüm Önerilerim",
+        "oneriler": "Çözüm Önerileri",
         "yeni": "Yeni Proje"
     },
     "uye": {
         "title": "Üye",
         "profil": "Profilim",
-        "projeler": "Katıldığım Projeler",
-        "oneriler": "Çözüm Önerilerim"
+        "ayarlar": "Üyelik Ayarlarım",
+        "oneri": "Öneri Oluştur/Düzenle"
     },
     "hata": {
         "title": "Hata",
