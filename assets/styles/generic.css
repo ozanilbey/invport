@@ -93,8 +93,8 @@ body.menu-open nav a.switch .close-icon { display: block; }
 .submenu { display: none; position: absolute; top: 85px; right: 0; width: 200px; padding: 5px 0; background-color: rgba(0, 212, 115, 1); border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
 .submenu::before { content: ''; position: absolute; top: -15px; right: 40px; width: 0; height: 0; border-top: 10px solid transparent; border-left: 10px solid transparent; border-right: 10px solid rgba(0, 212, 115, 1); border-bottom: 10px solid rgba(0, 212, 115, 1); }
 .submenu.open { display: block; }
-.submenu > a, .submenu > a:visited { display: inline-block; box-sizing: border-box; width: 200px; padding: 6% 10%; color: white; font-size: 0.8em; text-align: left; }
-.submenu > a:hover { background-color: rgba(0, 69, 166, .25); }
+.submenu a, .submenu a:visited { display: inline-block; box-sizing: border-box; width: 200px; padding: 6% 10%; color: white; font-size: 0.8em; text-align: left; }
+.submenu a:hover { background-color: rgba(0, 69, 166, .25); }
 
 /* Links */
 
@@ -116,9 +116,9 @@ header > .container, section > .container { margin: 4% auto; }
 
 header { display: inline-block; width: 100%; min-height: auto; background-size: cover; background-position: bottom center; background-repeat: repeat-x; background-blend-mode: multiply; background-color: transparent; background-image: url('../images/interface/bg-header.png'); border-bottom: 5px solid rgba(0, 69, 166, 1); }
 header a { display: inline; }
-header > .container > h1, header > .container form h1 { display: inline-block; margin: 3% 0; font-size: 36px; text-align: center; }
+header > .container > h1, header > .container h1 { display: block; margin: 3% 0; font-size: 36px; text-align: center; }
 header .container { position: relative; height: auto; transition: left 1s ease; }
-header p { font-size: 1.2em; line-height: 150%; }
+header p { display: block; font-size: 1.2em; line-height: 150%; }
 header button, header .button { font-size: 24px; }
 header.extended { min-height: 640px; }
 
@@ -172,7 +172,7 @@ section.details .container p:last-of-type { text-align: right; }
 section.details .container p.single { width: 100%; text-align: center; }
 section.details .container p b { font-family: 'merriweatherbold', serif; }
 section.details .container input { height: 50px; padding: 0 5%; text-align: left; border: 1px dashed white; box-shadow: none; }
-section.details .container input::placeholder { color: rgba(255, 255, 255, .5) }
+section.details .container input::placeholder { color: rgba(255, 255, 255, .5); }
 section.details .container .dropdown { padding: 0; background-color: rgba(0, 212, 115, 1); border: 1px dashed white; border-radius: 5px; box-shadow: none; }
 section.details .container .dropdown a { height: 50px; padding: 0 5%; color: white; text-align: left; font-family: 'sourcesansproregular', sans-serif; line-height: 50px; }
 

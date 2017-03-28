@@ -1,35 +1,31 @@
 <header>
     <div class="edit container">
         <img class="icon" src="<?php echo $root; ?>/assets/images/icons/bilgisayarmuhendisligi.png">
-        <form name="signupForm" id="signupForm" method="post" action="" novalidate="">
-            <fieldset>
-                <h1>
-                    <input id="projectname" type="text" name="projectname" size="50" placeholder="Lütfen buraya proje başlığı girin." value="Otizmli Çocuklar için Eğitim Uygulaması"/>
-                </h1>
-                <p>
-                    <textarea id="projectdescription" name="projectdescription" cols="50" placeholder="Lütfen buraya kısa açıklama girin.">Otizmli çocukların yoğun ve kaliteli bir eğitim almaları için çocuklara gereken ve eksik kalan eğitimin tablet bilgisayarlar aracılığıyla evde verilmesini amaçlar.</textarea>
-                </p>
-            </fieldset>
-        </form>
+        <fieldset>
+            <h1>
+                <input id="projectname" type="text" name="projectname" size="50" placeholder="Lütfen buraya proje başlığı girin." value="Otizmli Çocuklar için Eğitim Uygulaması"/>
+            </h1>
+            <p>
+                <textarea id="projectdescription" name="projectdescription" cols="50" placeholder="Lütfen buraya kısa açıklama girin.">Otizmli çocukların yoğun ve kaliteli bir eğitim almaları için çocuklara gereken ve eksik kalan eğitimin tablet bilgisayarlar aracılığıyla evde verilmesini amaçlar.</textarea>
+            </p>
+        </fieldset>
     </div>
 </header>
 <section class="details">
     <div class="edit container">
-        <form name="signupForm" id="signupForm" method="post" action="" novalidate="">
-            <fieldset>
-                <p class="item"><input id="projectprize" type="text" name="projectprize" size="50" placeholder="Ödül miktarı girin" value="5500TL"/></p>
-                <p class="item"><input id="projectdeadline" type="text" name="projectdeadline" size="50" placeholder="Son katılım tarihi girin" value="17 Nisan 2017"/></p>
-                <button class="item dropdown">
-                    <a data-number="0" href="#">Endüstri tipi seçin</a>
-                    <a data-number="1" href="#bilgisayarmuhendisligi">Bilgisayar Mühendisliği</a>
-                    <a data-number="2" href="#gida-tarim">Gıda &amp; Tarım</a>
-                    <a data-number="3" href="#matematik-istatistik">Matematik &amp; İstatistik</a>
-                    <a data-number="4" href="#tasarim-mimari">Tasarım &amp; Mimari</a>
-                    <a data-number="5" href="#saglik">Sağlık</a>
-                </button>
-                <input style="display: none;" id="projectindustry" type="text" name="projectindustry" size="50" placeholder="Sektör seçin." value="1"/>
-            </fieldset>
-        </form>
+        <fieldset>
+            <p class="item"><input id="projectprize" type="text" name="projectprize" size="50" placeholder="Ödül miktarı girin" value="5500TL"/></p>
+            <p class="item"><input id="projectdeadline" type="text" name="projectdeadline" size="50" placeholder="Son katılım tarihi girin" value="17 Nisan 2017"/></p>
+            <button class="item dropdown">
+                <a data-number="0" href="#">Endüstri tipi seçin</a>
+                <a data-number="1" href="#bilgisayarmuhendisligi">Bilgisayar Mühendisliği</a>
+                <a data-number="2" href="#gida-tarim">Gıda &amp; Tarım</a>
+                <a data-number="3" href="#matematik-istatistik">Matematik &amp; İstatistik</a>
+                <a data-number="4" href="#tasarim-mimari">Tasarım &amp; Mimari</a>
+                <a data-number="5" href="#saglik">Sağlık</a>
+            </button>
+            <input style="display: none;" id="projectindustry" type="text" name="projectindustry" size="50" placeholder="Sektör seçin." value="1"/>
+        </fieldset>
     </div>
 </section>
 <section class="information">

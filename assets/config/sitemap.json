@@ -21,7 +21,8 @@
     },
     "firma": {
         "title": "Firma",
-        "profil": "Firma Profili",
+        "bilgiler": "Firma Bilgileri",
+        "ayarlar": "Firma Ayarları",
         "projeler": "Yayınlanan Projeler",
         "duzenle": "Yayınlanan Projeler",
         "oneriler": "Çözüm Önerilerim",
