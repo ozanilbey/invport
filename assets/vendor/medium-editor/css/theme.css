@@ -5,7 +5,7 @@
 .medium-editor-toolbar li button:hover { background-color: rgba(0, 0, 0, .15); color: white; }
 .medium-editor-toolbar li .medium-editor-button-first { border-bottom-left-radius: 6px; border-top-left-radius: 6px; }
 .medium-editor-toolbar li .medium-editor-button-last { border-bottom-right-radius: 6px; border-right: none; border-top-right-radius: 6px; }
-.medium-editor-toolbar li .medium-editor-button-active { background-color: #030200; color: #ffedd5; }
+.medium-editor-toolbar li .medium-editor-button-active { color: rgba(0, 212, 115, 1) !important; font-weight: bold; }
 .medium-editor-toolbar-form { background: rgba(0, 69, 166, 1); border-radius: 6px; color: #ffedd5; }
 .medium-editor-toolbar-form .medium-editor-toolbar-input { background: rgba(0, 69, 166, 1); color: #ffedd5; height: 60px; }
 .medium-editor-toolbar-form .medium-editor-toolbar-input::-webkit-input-placeholder { color: rgba(255, 237, 213, 0.8); }

@@ -6,7 +6,7 @@
 </header>
 <section class="details">
     <div class="container">
-        <p class="single">Proje önerinizi aşağıdaki alana yazabilirsiniz.</p>
+        <p class="single">Proje önerinizi aşağıdaki alanda oluşturabilirsiniz.</p>
     </div>
 </section>
 <section class="information">

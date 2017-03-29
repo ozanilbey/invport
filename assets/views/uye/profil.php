@@ -23,7 +23,7 @@
     <div class="segments container">
         <h1>Çözüm Önerilerim</h1>
         <div class="segment">
-            <a href="<?php echo $root; ?>/uye/duzenle">
+            <a href="<?php echo $root; ?>/uye/oneri">
                 <h3>#1872319 </h3>
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Önermekte olduğum çözüm çocukların yoğun ve kaliteli bir eğitim almaları için gereken ve eksik kalan eğitimin tablet bilgisayarlar aracılığıyla evde verilmesi üzerinedir.</p>
@@ -33,7 +33,7 @@
             </a>
         </div>
         <div class="segment">
-            <a href="<?php echo $root; ?>/uye/duzenle">
+            <a href="<?php echo $root; ?>/uye/oneri">
                 <h3>#1872319 </h3>
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Önermekte olduğum çözüm çocukların yoğun ve kaliteli bir eğitim almaları için gereken ve eksik kalan eğitimin tablet bilgisayarlar aracılığıyla evde verilmesi üzerinedir.</p>
@@ -44,7 +44,7 @@
         </div>
         <h1>Taslaklarım</h1>
         <div class="segment">
-            <a href="<?php echo $root; ?>/uye/duzenle">
+            <a href="<?php echo $root; ?>/uye/oneri">
                 <h3>#1872319 </h3>
                 <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
                 <p>Önermekte olduğum çözüm çocukların yoğun ve kaliteli bir eğitim almaları için gereken ve eksik kalan eğitimin tablet bilgisayarlar aracılığıyla evde verilmesi üzerinedir.</p>

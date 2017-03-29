@@ -14,10 +14,19 @@
                     </fieldset>
                 </form>
             </div>
-            <a class="reminder link" href="#">Şifremi unuttum</a>
+            <a class="reminder link" href="#recovery">Şifremi unuttum</a>
         </div>
     </div>
 </header>
+<section id="recovery">
+    <div class="container">
+        <h1>Yeni Şifre Talebi</h1>
+        <fieldset>
+            <input id="recoveryemail" type="text" name="recoveryemail" size="30" placeholder="Kayıtlı email adresini gir" required="">
+            <button id="recoverysubmit" class="submit on" type="submit" disabled="">YENİ ŞİFRE GÖNDER</button>
+        </fieldset>
+    </div>
+</section>
 <!-- The code below is not to be published in working copy -->
 <script type="text/javascript">
     $(document).ready(function() {

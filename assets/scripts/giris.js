@@ -46,4 +46,19 @@ $(document).ready(function() {
         }
     });
     
+    //Recovery Mail Approval
+
+    var recoveryEmailApproved = false;
+    
+    $('#recoveryemail').bind('change keyup', function() {
+        var recoveryEmailAddress = $('#recoveryemail').val();
+        if(pattern.test(recoveryEmailAddress) == true) {
+            recoveryEmailApproved = true;
+            $('#recoverysubmit').removeAttr('disabled');
+        } else {
+            recoveryEmailApproved = false;
+            $('#submit').prop('disabled', true);
+        }
+    });
+    
 });
