@@ -57,8 +57,10 @@ h1, h2, h3, h4, h5, h6, button, .button { font-family: "sourcesansprosemibold", 
 h1 { color: rgba(0, 69, 166, 1); font-family: 'merriweatherbold', serif; line-height: 125%; margin-bottom: 1em; }
 h2 { color: rgba(0, 69, 166, 1); font-family: 'merriweatherbold', serif; line-height: 135%; }
 h3 { color: rgba(0, 212, 115, 1); line-height: 150%; }
-p { line-height: 135%; }
-h1 + p, h2 + p, h3 + p { margin-top: .35em; }
+p { line-height: 135%; margin-bottom: 1em; }
+h1 + p { margin-top: .65em; }
+h2 + p { margin-top: .5em; }
+h3 + p { margin-top: .35em; }
 
 /* Overlay */
 
@@ -108,8 +110,9 @@ a.link:hover::after, a.link:focus::after { opacity: 1; transform: translateY(0px
 body, div, section { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
 body > nav + header:first-of-type, body > nav + section:first-of-type { padding-top: 100px; }
 header > .container, section > .container { margin: 4% auto; }
-.container { position: relative; width: 90%; margin: 0 auto; padding: 0; text-align: center; }
+.container { position: relative; width: 90%; margin: 0 auto; padding: 0; text-align: center; max-width: 1152px; }
 .container:after { content: ''; display: block; clear: both; }
+.container.narrow { max-width: 720px; }
 .container > img { width: 100%; }
 
 /* Header */
@@ -432,8 +435,6 @@ h1, h2, a, a:visited, a.link, a.link:visited, a.link::after { color: rgba(0, 69,
     h1 { font-size: ; }
     h2 { font-size: ; }
     
-    .container { max-width: 1152px; }
-    
     #menu {  }
     #menu li {  }
     #menu li a {  }
@@ -448,8 +449,6 @@ h1, h2, a, a:visited, a.link, a.link:visited, a.link::after { color: rgba(0, 69,
     h1 { font-size: ; }
     h2 { font-size: ; }
     
-    .container { max-width: 1152px; }
-    
 }
 
 /* 1680 ≤ Window Width */
@@ -460,7 +459,6 @@ h1, h2, a, a:visited, a.link, a.link:visited, a.link::after { color: rgba(0, 69,
     h1 { font-size: ; }
     h2 { font-size: ; }
     
-    .container { max-width: 1152px; }
     header > .container, section > .container { margin: 3% auto; }
     
 }
