@@ -11,4 +11,9 @@ $(document).ready(function() {
         $(this).toggleClass('true');
     });
     
+    $('.segment a.toggle').click(function() {
+        $(this).toggleClass('active');
+        $(this).parent('.segment').children('.log').toggleClass('open');
+    });
+    
 });

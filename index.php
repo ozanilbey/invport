@@ -90,6 +90,14 @@
     }
 ?>
 <body id="<?php echo $main; ?>" class="<?php echo $class; ?>"><?php echo $kullanici; ?>
+    <section class="status">
+        <div class="container">
+            Kullanıcı onay e-postası gönderildi. <a href="#">Tekrar gönder</a>
+        </div>
+        <a href="#">
+            <img src="<?php echo $root; ?>/assets/images/interface/icon-close.png" />
+        </a>
+    </section>
     <nav>
         <div class="navigation container">
             <div class="menu">
@@ -127,8 +135,8 @@
                 ?>
             </div>
             <a class="switch" href="#">
-                <img class="menu-icon" src="<?php echo $root; ?>/assets/images/interface/icon_menu.png">
-                <img class="close-icon" src="<?php echo $root; ?>/assets/images/interface/icon_close.png">
+                <img class="menu-icon" src="<?php echo $root; ?>/assets/images/interface/icon-menu.png">
+                <img class="close-icon" src="<?php echo $root; ?>/assets/images/interface/icon-close.png">
             </a>
         </div>
     </nav>
@@ -178,5 +186,19 @@
             </div>
         </div>
     </footer>
+    <section class="modal">
+        <div class="container">
+            <div class="box">
+                <div class="head">
+                    <b>ONAY GEREKİYOR</b>
+                </div>
+                <div class="body">
+                    <p>Taslağı silmek istediğinizden emin misiniz?</p>
+                    <a class="button">TAMAM</a>
+                    <a class="button reject">İPTAL</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

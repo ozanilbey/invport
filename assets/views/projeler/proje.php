@@ -18,6 +18,7 @@
         <p>Otizmli çocukların yoğun ve kaliteli bir eğitim almaları için çocuklara gereken ve eksik kalan eğitimin tablet bilgisayarlar aracılığıyla evde verilmesini amaçlar.</p>
         <h3>Otizm nedir?</h3>
         <p>Otizm üç yaşından önce başlayan ve ömür boyu süren, beynin gelişimini engelleyen bir rahatsızlıktır. The Autism Society‘nin verilerine göre dünya üzerinde otizmli sayısı toplam nüfusun %1,5 ine tekabül etmektedir. Otizmin neden kaynaklandığı bilinmemektedir. Bu nedenle net bir ilaç tedavisi veya tıbbi çözümü yoktur. Otizmin bugün için kabul edilen en önemli tedavi aracı, erken ve yoğun eğitimdir.</p>
+        <a class="pdf document" target="_blank">OtizmGercegi.pdf</a>
         <img src="<?php echo $root; ?>/assets/content/sample-project/image01.png">
         <p>Ülkemizde otizm tanısı olan çocuklar yeterli eğitim alamamaktadırlar. Bunun başlıca sebepleri;</p>
         <ul>

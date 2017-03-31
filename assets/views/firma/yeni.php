@@ -36,7 +36,7 @@
         <h3>H3 - Alt Başlık</h3>
         <p>P - Proje açıklamasının yer alacağı örnek paragraf bu şekilde görünecek. Burada bulunan tüm yazıları seçerek değiştirebilirsiniz, resim ekleyebilir ve kaldırabilirsiniz.</p>
         <img src="<?php echo $root; ?>/assets/content/sample-project/image01.png">
-        <p>Yukarıdaki resmi kaldirarak kendi resimlerinizi eklemeyi deneyin.</p>
+        <p>Yukarıdaki resmi kaldırarak kendi resimlerinizi eklemeyi deneyin.</p>
         <h3>Bir Diğer Alt Başlık</h3>
         <p>Bu bölgede yer alan yazıları seçtiğinizde, onları değiştirebildiğinizi göreceksiniz. Yazıları <b>kalın</b>, <u>altı çizili</u> ya da <i>italik</i> yapabilirsiniz. İsterseniz <a href="http://www.google.com.tr">bir link</a> de ekleyebilirsiniz.</p>
     </div>

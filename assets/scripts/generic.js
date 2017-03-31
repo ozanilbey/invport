@@ -8,6 +8,12 @@ $(document).ready(function() {
     $('a[href="#"]').click(function(e){
         e.preventDefault();
     });
+    $('section.status > a').click(function(){
+        $('section.status').remove();
+    });
+    $('section.modal .reject').click(function(){
+        $('section.modal').remove();
+    });
     if($(window).scrollTop() <= 0) {
         $('nav').css('background-color', 'rgba(255, 255, 255, 0)').css('box-shadow', '0 1px 5px rgba(0, 0, 0, 0), 0 1px 3px rgba(0, 0, 0, 0)');
     } else if ($(window).scrollTop() > 0 && $(window).scrollTop() <= 100) {
@@ -29,7 +35,7 @@ $(window).resize(function() {
     var viewportHeight;
     viewportHeight = $(window).height();
     $('body').css('min-height', viewportHeight + 'px');
-    $('section.overlay').css('height', viewportHeight + 'px');
+    $('section.modal').css('height', viewportHeight + 'px');
 });
 
 

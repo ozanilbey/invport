@@ -52,6 +52,7 @@
                     <p>Son düzenleme: 17 Şubat 2017 - 17:08</p>
                 </blockquote>
             </a>
+            <a class="button">Onaya göndermek için buraya tıklayın</a>
         </div>
     </div>
 </section>
