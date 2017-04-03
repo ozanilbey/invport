@@ -223,7 +223,7 @@ section.press .message i { float: right; margin-top: 1%; color: rgba(0, 212, 115
 
 /* Section: Action */
 
-section.action { padding: 2% 0; background-color: rgba(0, 212, 115, 1); }
+section.action { margin-bottom: 0; padding: 2% 0; background-color: rgba(0, 212, 115, 1); }
 section.action .container { margin-bottom: 0; }
 section.action .container > div { float: left; width: 75%; margin: 0; background-position: left center; background-size: contain; background-repeat: no-repeat; background-color: transparent; }
 section.action .container > button, section.action .container > .button { float: right; margin-left: 1%; }
@@ -349,7 +349,7 @@ button:active, .button:active { top: 1px; box-shadow: none; }
 button.bottom, .button.bottom { border-radius: 0; height: 50px; padding: 1% 40px; border-top-left-radius: 50px; border-top-right-radius: 50px; }
 button.bottom:hover, .button.bottom:hover { box-shadow: none; color: rgba(255, 255, 255, .75); }
 
-button img, .button img { display: inline-block; position: relative; height: 30px; margin: -5px 5px -5px 0; vertical-align: middle; }
+button img, .button img { display: inline-block; position: relative; height: 30px; vertical-align: middle; }
 button > img + p, .button > img + p { line-height: 20px; }
 
 /* Color */

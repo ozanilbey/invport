@@ -107,7 +107,7 @@
                 <a class="nedir" href="#/<?php echo $root; ?>/nedir">NEDİR?</a>
                 <a class="projeler" href="<?php echo $root; ?>/projeler">PROJELER</a>
                 <a class="haberler" href="<?php echo $root; ?>/haberler">HABERLER</a>
-                <a class="iletisim" href="#/<?php echo $root; ?>/iletisim">İLETİŞİM</a>
+                <a class="iletisim" href="<?php echo $root; ?>/iletisim">İLETİŞİM</a>
                 <?php
                     if ($user == 'firma') {
                         echo '<a class="firma" href="#">TÜLOMSAŞ</a>

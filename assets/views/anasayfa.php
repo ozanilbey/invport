@@ -3,7 +3,7 @@
         <h1>Aradığınız inovatif fikir uzaklarda değil!</h1>
         <p>Açık İnovasyon programı ile çözüm sahiplerinin fikirleri, firmaların inovasyon ihtiyacına cevap veriyor. Düşünceler iş fikirlerine, iş fikirleri projelere, projeler ürünlere dönüşüyor!</p>
         <a class="button" role="button">
-            <img src="assets/images/interface/icon-browse.png" />
+            <img class="browse" src="assets/images/interface/icon-browse.png" />
             PROJELERİ GÖR
         </a>
     </div>
