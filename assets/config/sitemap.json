@@ -24,8 +24,9 @@
         "bilgiler": "Firma Bilgileri",
         "ayarlar": "Firma Ayarları",
         "projeler": "Yayınlanan Projeler",
-        "duzenle": "Yayınlanan Projeler",
+        "duzenle": "Projeyi Düzenle",
         "oneriler": "Çözüm Önerileri",
+        "oneri": "Çözüm Önerisi",
         "yeni": "Yeni Proje"
     },
     "uye": {
@@ -37,5 +38,8 @@
     "hata": {
         "title": "Hata",
         "404": "Sayfa bulunamadı!"
+    },
+    "sifre": {
+        "title": "Şifre"
     }
 }

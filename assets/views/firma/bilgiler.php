@@ -21,6 +21,6 @@ Aşağıdaki kısım yalnızca firmanın kendisi tarafından görülebilecek.
 -->
 <section class="change">
     <div class="container">
-        <button>BİLGİLERİ DÜZENLE</button>
+        <a href="<?php echo $root; ?>/firma/ayarlar" class="button">BİLGİLERİ DÜZENLE</a>
     </div>
 </section>

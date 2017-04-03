@@ -21,7 +21,6 @@ $(document).ready(function() {
         }
     });
     
-    
     var passwordApproved = false;
     
     var requiredPasswordLength = 6;

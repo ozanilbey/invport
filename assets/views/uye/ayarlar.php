@@ -18,6 +18,7 @@ Resime tıklanması durumunda resim seçici açılacak ve seçilen resim yüklen
             <br/>
             <input id="userphone" name="userphone" rows="1" cols="50" placeholder="Lütfen buraya telefon numaranızı girin." value="0 (533) 745 97 35" />
         </p>
+        <a class="password" href="<?php echo $root; ?>/sifre">Şifre değiştirmek için tıklayın</a>
     </div>
 </header>
 <section class="save">

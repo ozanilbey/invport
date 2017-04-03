@@ -1,6 +1,6 @@
 <header class="extended">
     <div class="container">
-        <h1>İnovasyon Gündemini Kaçırma!</h1>
+        <h1>İnovasyon gündemini kaçırma!</h1>
         <p>Açık İnovasyon programına dair duyuru ve bilgilendirmelerin yanı sıra güncel sektörel gelişmeleri, Türkiye'den ve dünyadan inovasyon haberlerini burada bulabilirsin.</p>
     </div>
 </header>

@@ -1,2 +1,7 @@
 #firma .logo { width: auto; max-width: 400px; max-height: 400px; margin: 2.5% 0; }
 #firma .checkbox { box-sizing: border-box; width: 300px; margin-top: 2%; padding: 10px; color: inherit; border: 1px dashed rgba(0, 0, 0, .15); }
+#firma.oneriler .segment p { height: 3em; white-space: normal; }
+#firma.oneriler .segment p::after { content: '...'; }
+#firma.oneriler .segment button, #firma.oneriler .segment .button { display: none; color: white !important; background-color: rgba(0, 212, 115, 1); }
+#firma.oneriler .explanation { display: none; margin-bottom: 2%; padding-top: 80px; }
+#firma.oneriler .caution { display: none; }

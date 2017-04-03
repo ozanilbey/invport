@@ -16,6 +16,7 @@
                             <a class="link" href="#agreement">Kullanıcı Taahhütnamesi</a>'ni kabul ediyorum.
                             <input id="authorization" type="checkbox" name="authorization" />
                         </div>
+                        <p class="error">Bu email adresi sisteme kayıtlı.</p>
                         <button id="submit" class="submit on" type="submit" disabled="">ÜYELİĞİMİ OLUŞTUR</button>
                     </fieldset>
                 </form>
@@ -44,14 +45,14 @@
         <p>
             İşbu taahhütnamede yer alan:
             <ul>
-                <li><b>ESOGÜ</b>: Eskişehir Osmangazi Üniversitesi’ni,<li>
-                <li><b>ETTOM</b>: ESOGÜ Teknoloji Transfer Ofisi Uygulama ve Araştırma Merkezi’ni,<li>
-                <li><b>İNVPORT</b> : Açık İnovasyon Ve Teknoloji Transferi Platformu’nu,<li>
-                <li><b>İLAN</b>: FİRMA tarafından AİP’e fikir veya çözüm almak üzere bırakılan ilanı,<li>
-                <li><b>KULLANICI</b>: İLAN’lara fikir ve çözüm başvurusu yapan kişileri,<li>
-                <li><b>ÇÖZÜM</b>: AİP üzerinden İLAN’a gönderilmiş fikir ve çözümleri,<li>
-                <li><b>ÖDÜL</b>: İLAN’a gönderilen ÇÖZÜMler arasından kazananlara yapılacak ödemeleri,<li>
-                <li><b>OTEK</b>: OTEK Teknoloji Sanayi ve Ticaret Anonim Şirketi'ni<li>
+                <li><b>ESOGÜ</b>: Eskişehir Osmangazi Üniversitesi’ni,</li>
+                <li><b>ETTOM</b>: ESOGÜ Teknoloji Transfer Ofisi Uygulama ve Araştırma Merkezi’ni,</li>
+                <li><b>İNVPORT</b> : Açık İnovasyon Ve Teknoloji Transferi Platformu’nu,</li>
+                <li><b>İLAN</b>: FİRMA tarafından AİP’e fikir veya çözüm almak üzere bırakılan ilanı,</li>
+                <li><b>KULLANICI</b>: İLAN’lara fikir ve çözüm başvurusu yapan kişileri,</li>
+                <li><b>ÇÖZÜM</b>: AİP üzerinden İLAN’a gönderilmiş fikir ve çözümleri,</li>
+                <li><b>ÖDÜL</b>: İLAN’a gönderilen ÇÖZÜMler arasından kazananlara yapılacak ödemeleri,</li>
+                <li><b>OTEK</b>: OTEK Teknoloji Sanayi ve Ticaret Anonim Şirketi'ni</li>
             </ul>
             tarifler.
         </p>
@@ -72,8 +73,8 @@
                 <li>12. <b>OTEK A.Ş.</b> veya <b>FİRMA</b>’nın platformda yer alan taahhütlerine uymadığını, <b>FİRMA</b>’nın <b>ÇÖZÜM</b>’ü ödüllendirmeden kullandığını tespit halinde iyi niyet çerçevesinde hukuki süreçlerin işletileceğini,</li>
                 <li>13. <b>İNVPORT</b> tarafından kurallarına aykırı davranışın tespit edilmesi halinde uyarılabileceğini, hesabının askıya alınabileceğini, silinebileceğini veya hukuki süreçlerin işletilebileceğini,</li>
                 <li>14. <b>İNVPORT</b> siber güvenlik politikalarına uygun davranacağını ve platform güvenliğine yönelik risk içeren çalışma ve davranışlarda bulunmayacağını</li>
-                ve platform üzerinde yer alan diğer uyarıları, kural ve koşulları gayrı kabilü rücu, beyan, kabul ve taahhüt eder.
             </ul>
+            ve platform üzerinde yer alan diğer uyarıları, kural ve koşulları gayrı kabilü rücu, beyan, kabul ve taahhüt eder.
         </p>
         <a class="button" href="#uyelik">İŞLEME DEVAM ET</a>
     </div>

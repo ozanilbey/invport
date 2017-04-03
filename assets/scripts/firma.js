@@ -11,9 +11,20 @@ $(document).ready(function() {
         $(this).toggleClass('true');
     });
     
-    $('.segment a.toggle').click(function() {
-        $(this).toggleClass('active');
-        $(this).parent('.segment').children('.log').toggleClass('open');
+    $('.picker').click(function() {
+        $('.segments > h1').hide();
+        $('.explanation').show();
+        $('.segment .button').show();
+        $('.action .button').hide();
+        $('.caution').show();
+    });
+    
+    $('.cancel').click(function() {
+        $('.segments > h1').show();
+        $('.explanation').hide();
+        $('.segment .button').hide();
+        $('.action .button').show();
+        $('.caution').hide();
     });
     
 });

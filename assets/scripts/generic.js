@@ -29,6 +29,10 @@ $(document).ready(function() {
         $('.menu > a').last().toggleClass('clicked');
         $('.submenu').toggleClass('open');
     });
+    $('.segment a.toggle').click(function() {
+        $(this).toggleClass('active');
+        $(this).parent('.segment').children('.log').toggleClass('open');
+    });
 });
 
 $(window).resize(function() {
@@ -37,7 +41,6 @@ $(window).resize(function() {
     $('body').css('min-height', viewportHeight + 'px');
     $('section.modal').css('height', viewportHeight + 'px');
 });
-
 
 $(window).scroll(function() {
     if($(window).scrollTop() <= 0){

@@ -15,6 +15,7 @@ Logoya tıklanması durumunda resim seçici açılacak ve seçilen resim yüklen
                 <br/>
                 <textarea id="companyaddress" name="companyaddress" rows="1" cols="50" placeholder="Lütfen buraya firma adresini girin.">Ahmet Kanatlı Caddesi 26490 Eskişehir/Türkiye</textarea>
             </p>
+            <a class="password" href="<?php echo $root; ?>/sifre">Şifre değiştirmek için tıklayın</a>
             <div class="checkbox">
                 <div class="boolean"></div>
                 Firma bilgileri herkese açık olsun.

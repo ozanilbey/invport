@@ -31,6 +31,18 @@
                     <p>Son düzenleme: 17 Şubat 2017 - 17:08</p>
                 </blockquote>
             </a>
+            <a class="toggle" href="#">
+                <img src="<?php echo $root; ?>/assets/images/interface/icon-information.png"/>
+            </a>
+            <div class="log">
+                <ul>
+                    <li>12 Mart 2017 16:07 - Taslak oluşturuldu.</li>
+                    <li>12 Mart 2017 17:41 - Onaya gönderildi.</li>
+                    <li>13 Mart 2017 09:23 - Çözüm önerisi reddedildi. (Açıklama yetersiz.)</li>
+                    <li>14 Mart 2017 11:54 - Onaya gönderildi.</li>
+                    <li>14 Mart 2017 01:33 - Çözüm önerisi kabul edildi.</li>
+                </ul>
+            </div>
         </div>
         <div class="segment">
             <a href="<?php echo $root; ?>/uye/oneri">
@@ -41,6 +53,18 @@
                     <p>Son düzenleme: 17 Şubat 2017 - 17:08</p>
                 </blockquote>
             </a>
+            <a class="toggle" href="#">
+                <img src="<?php echo $root; ?>/assets/images/interface/icon-information.png"/>
+            </a>
+            <div class="log">
+                <ul>
+                    <li>12 Mart 2017 16:07 - Taslak oluşturuldu.</li>
+                    <li>12 Mart 2017 17:41 - Onaya gönderildi.</li>
+                    <li>13 Mart 2017 09:23 - Çözüm önerisi reddedildi. (Açıklama yetersiz.)</li>
+                    <li>14 Mart 2017 11:54 - Onaya gönderildi.</li>
+                    <li>14 Mart 2017 01:33 - Çözüm önerisi kabul edildi.</li>
+                </ul>
+            </div>
         </div>
         <h1>Taslaklarım</h1>
         <div class="segment">
@@ -52,6 +76,14 @@
                     <p>Son düzenleme: 17 Şubat 2017 - 17:08</p>
                 </blockquote>
             </a>
+            <a class="toggle" href="#">
+                <img src="<?php echo $root; ?>/assets/images/interface/icon-information.png"/>
+            </a>
+            <div class="log">
+                <ul>
+                    <li>12 Mart 2017 16:07 - Taslak oluşturuldu.</li>
+                </ul>
+            </div>
             <a class="button">Onaya göndermek için buraya tıklayın</a>
         </div>
     </div>

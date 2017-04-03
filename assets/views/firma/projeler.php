@@ -13,6 +13,31 @@
 </section>
 <section class="showcase">
     <div class="segments container">
+        <h1>Tamamlanan Projeleriniz</h1>
+        <div class="segment tamamlanan-projeler">
+            <a href="<?php echo $root; ?>/firma/duzenle">
+                <h1>Otizmli Çocuklar için Eğitim Uygulaması</h1>
+                <p>Otizmli çocukların yoğun ve kaliteli bir eğitim almaları için çocuklara gereken ve eksik kalan eğitimin tablet bilgisayarlar aracılığıyla evde verilmesini amaçlar.</p>
+                <blockquote>
+                    <p>17.04.2017</p>
+                    <p>5500TL</p>
+                </blockquote>
+            </a>
+            <a class="toggle" href="#">
+                <img src="<?php echo $root; ?>/assets/images/interface/icon-information.png"/>
+            </a>
+            <div class="log">
+                <ul>
+                    <li>12 Mart 2017 16:07 - Taslak oluşturuldu.</li>
+                    <li>12 Mart 2017 17:41 - Onaya gönderildi.</li>
+                    <li>13 Mart 2017 09:23 - Proje önerisi reddedildi. (Açıklama yetersiz, sektör seçilmemiş.)</li>
+                    <li>14 Mart 2017 11:54 - Onaya gönderildi.</li>
+                    <li>14 Mart 2017 01:33 - Onaylandı ve yayına alındı.</li>
+                    <li>30 Ağustos 2017 00:00 - Proje süreci tamamlandı.</li>
+                </ul>
+            </div>
+            <a class="button" href="<?php echo $root; ?>/oneriler">Çözüm önerilerini görüntüle (13)</a>
+        </div>
         <h1>Yayınlanan Projeleriniz</h1>
         <div class="segment yayindaki-projeler secilmis-projeler">
             <a href="<?php echo $root; ?>/firma/duzenle">

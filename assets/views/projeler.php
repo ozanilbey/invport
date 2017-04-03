@@ -1,6 +1,6 @@
 <header class="extended">
     <div class="container">
-        <h1>Ödüllü Proje Fikirleri!</h1>
+        <h1>Ödüllü proje fikirleri!</h1>
         <p>Açık İnovasyon programı ile firmalar, sektörel hedeflerine en uygun projeleri kolayca seçiyor! Fikir sahiplerinin projeleri hem ödüllendiriliyor, hem de üretilerek hayata geçiyor.</p>
     </div>
 </header>

@@ -1,6 +1,6 @@
 header { height: 100%; min-height: inherit; }
 #uyelik #agreement { padding: 80px 0; }
-#uyelik section p { margin-top: 1.5em; }
+#uyelik section#agreement p { margin-top: 1.5em; }
 #uyelik section ul { margin: .35em 0; }
 #uyelik section ul li { margin: 0 0 .35em 1.5em; }
 #uyelik section ul li:last-of-type { margin-bottom: .35em; }

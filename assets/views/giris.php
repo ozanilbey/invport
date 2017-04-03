@@ -10,6 +10,7 @@
                     <fieldset>
                         <input id="email" type="text" name="email" size="30" placeholder="Email adresini gir" required="">
                         <input id="password" type="text" name="password" size="30" placeholder="Şifreni gir" required="">
+                        <p class="error">Bu email adresi sistemde yok.</p>
                         <button id="submit" class="submit on" type="submit" disabled="">GİRİŞ YAP</button>
                     </fieldset>
                 </form>
