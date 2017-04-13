@@ -4,7 +4,7 @@
             <h1><?php echo $sub; ?></h1>
             <i>Aradığınız sayfaya ulaşılamıyor.</i>
             <a class="button" href="<?php echo $root; ?>">
-                <p>Anasayfaya dön!</p>
+                <p>ANASAYFAYA DÖN</p>
             </a>
         </div>
     </div>

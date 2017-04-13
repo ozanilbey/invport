@@ -5,6 +5,7 @@ $(document).ready(function() {
         $('a[data-number="' + currentNumber + '"]').prependTo('.dropdown');
     }
     $('.dropdown a').click(function() {
+        $('a[data-number="0"]').remove();
         if($('.dropdown').hasClass('open')) {
             $(this).prependTo('.dropdown');
             var number = $(this).data('number');

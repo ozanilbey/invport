@@ -98,7 +98,6 @@
             <i>Prof. Dr. Hasan Gönen — ESOGÜ Rektörü</i>
         </div>
     </div>
-    <img src="<?php echo $root; ?>/assets/images/interface/visual-pr.png" />
 </section>
 <section class="action">
     <div class="container">

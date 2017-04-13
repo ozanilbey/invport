@@ -5,3 +5,19 @@ header { background-image: url('../images/headers/iletisim.png'); }
 #iletisim section.social a > img { position: relative; height: 60px; margin-right: 10px; top .35s ease; }
 #iletisim section.social a:last-of-type > img { margin-right: 0; }
 #iletisim section.social a:hover > img { top: -5px; }
+
+/* Window Width < 480 */
+
+@media only screen and (max-width: 479px) {
+    
+    #iletisim section.social a > img { height: 40px; margin-right: 4px; margin-bottom: 5px; }
+    
+}
+
+/* 480 ≤ Window Width < 768 */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+    #iletisim section.social a > img { height: 50px; margin-right: 7px; margin-bottom: 6px; }
+    
+}

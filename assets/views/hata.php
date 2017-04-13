@@ -4,7 +4,7 @@
             <h1><?php echo $sub; ?></h1>
             <i><?php echo $sitemap[$main][$sub]; ?></i>
             <a class="button" href="<?php echo $root; ?>">
-                <p>Anasayfaya dön!</p>
+                <p>ANASAYFAYA DÖN</p>
             </a>
         </div>
     </div>

@@ -4,3 +4,19 @@ header { height: 100%; min-height: inherit; }
 #giris #recovery h1 { text-align: center; }
 #giris #recovery input { display: inline-block; width: 100%; margin-bottom: 4%; padding: 3% 5%; box-sizing: border-box; text-align: center; }
 #giris #recovery button { display: inline-block; width: 100%; margin: 0; padding: 5%; box-sizing: border-box; }
+
+/* Window Width < 480 */
+
+@media only screen and (max-width: 479px) {
+    
+    #giris #recovery .container { width: 80%; }
+    
+}
+
+/* 480 ≤ Window Width < 768 */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+    #giris #recovery .container { width: 60%; }
+    
+}

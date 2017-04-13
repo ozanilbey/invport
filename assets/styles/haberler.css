@@ -1,4 +1,5 @@
 header { background-image: url('../images/headers/haberler.png'); }
+header > .container > .visual { width: 50%; margin: 2.5% 0; border: 10px solid white; border-radius: 16px; box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24); }
 .news { margin-bottom: 5%; }
 .news:last-child { margin-bottom: 0; }
 .news > div { overflow: hidden; height: 100%; min-height: 80px; background-color: white; border-radius: 16px; box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24); transition: all 0.3s cubic-bezier(.25, .8, .25, 1); }
@@ -12,4 +13,33 @@ header { background-image: url('../images/headers/haberler.png'); }
 .news > .content:hover { box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .24); cursor: pointer; }
 .news > .content .visual { width: 100%; padding-bottom: 50%; background-size: cover; background-position: center center; }
 .news > .content .text { width: 100%; padding: 5%; color: rgba(71, 75, 76, 1); background-size: cover; background-position: center center; }
-header > .container > .visual { width: 50%; margin: 2.5% 0; border: 10px solid white; border-radius: 16px; box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24); }
+
+/* Window Width < 480 */
+
+@media only screen and (max-width: 479px) {
+    
+    header > .container > .visual { width: 80%; border: 4px solid white; border-radius: 8px; }
+    
+    .news > div { border-radius: 8px; }
+    .news > div:first-child { width: 40px; }
+    .news > .date { height: 40px; min-height: 40px; padding: 6px; }
+    .news > .date h2 { height: 12px; font-size: 16px; line-height: 12px; }
+    .news > .date b { height: 8px; margin-top: 6px; font-size: 11px; line-height: 8px; }
+    .news > div:last-child { margin-left: 50px; }
+    
+}
+
+/* 480 ≤ Window Width < 768 */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+    header > .container > .visual { width: 65%; border: 7px solid white; border-radius: 12px; }
+    
+    .news > div { border-radius: 12px; }
+    .news > div:first-child { width: 60px; }
+    .news > .date { height: 60px; min-height: 60px; padding: 9px; }
+    .news > .date h2 { height: 18px; font-size: 24px; line-height: 18px; }
+    .news > .date b { height: 12px; margin-top: 9px; font-size: 16px; line-height: 12px; }
+    .news > div:last-child { margin-left: 75px; }
+    
+}

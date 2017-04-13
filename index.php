@@ -90,21 +90,23 @@
     }
 ?>
 <body id="<?php echo $main; ?>" class="<?php echo $class; ?>"><?php echo $kullanici; ?>
+    
     <section class="status">
         <div class="container">
             Kullanıcı onay e-postası gönderildi. <a href="#">Tekrar gönder</a>
         </div>
         <a href="#">
-            <img src="<?php echo $root; ?>/assets/images/interface/icon-close.png" />
+            <img src="<?php echo $root; ?>/assets/images/interface/icon-close_light.png" />
         </a>
     </section>
+    
     <nav>
         <div class="navigation container">
             <div class="menu">
                 <a class="anasayfa identity" href="<?php echo $root; ?>">
                     <img src="<?php echo $root; ?>/assets/images/identity/logo.png">
                 </a>
-                <a class="nedir" href="#/<?php echo $root; ?>/nedir">NEDİR?</a>
+                <a class="nedir" href="<?php echo $root; ?>/nedir">NEDİR?</a>
                 <a class="projeler" href="<?php echo $root; ?>/projeler">PROJELER</a>
                 <a class="haberler" href="<?php echo $root; ?>/haberler">HABERLER</a>
                 <a class="iletisim" href="<?php echo $root; ?>/iletisim">İLETİŞİM</a>
@@ -186,6 +188,7 @@
             </div>
         </div>
     </footer>
+    <!--
     <section class="modal">
         <div class="container">
             <div class="box">
@@ -198,7 +201,18 @@
                     <a class="button reject">İPTAL</a>
                 </div>
             </div>
+            <div class="comment box">
+                <div class="head">
+                    <b>AÇIKLAMA EKLEYİN</b>
+                </div>
+                <div class="body">
+                    <textarea id="explanation" name="explanation" rows="3" cols="50">Lütfen reddedilme sebebini buraya girin...</textarea>
+                    <a class="button">TAMAM</a>
+                    <a class="button reject">İPTAL</a>
+                </div>
+            </div>
         </div>
     </section>
+    -->
 </body>
 </html>

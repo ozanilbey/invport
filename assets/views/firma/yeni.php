@@ -16,7 +16,7 @@
 <section class="details">
     <div class="edit container">
         <fieldset>
-            <p class="item"><input id="projectprize" type="text" name="projectprize" size="50" placeholder="Ödül miktarı girin" value=""/></p>
+            <p class="item unit"><input id="projectprize" type="text" name="projectprize" size="50" placeholder="Ödül miktarı girin" value=""/></p>
             <p class="item"><input id="projectdeadline" type="text" name="projectdeadline" size="50" placeholder="Son katılım tarihi girin" value=""/></p>
             <button class="item dropdown">
                 <a data-number="0" href="#">Endüstri tipi seçin</a>

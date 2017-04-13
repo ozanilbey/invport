@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $('.switch').click(function() {
+        $('body').toggleClass('menu-open');
+    });
     var main = $('body').attr('id');
     $('.menu > a').removeClass('active');
     $('.menu > a.' + main).addClass('active');
@@ -33,6 +36,7 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $(this).parent('.segment').children('.log').toggleClass('open');
     });
+    
 });
 
 $(window).resize(function() {

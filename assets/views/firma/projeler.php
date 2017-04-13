@@ -8,7 +8,7 @@
     <div class="container">
         <p class="single">Şu anda firmanız tarafından oluşturulmuş <b>3 proje</b> var.</p>
         <!-- If there isn't any project -->
-        <p class="single">Henüz firmanız tarafından oluşturulmuş proje yok.<a class="button">YENİ PROJE OLUŞTUR</a></p>
+        <p class="single">Henüz firmanız tarafından oluşturulmuş proje yok.<a href="<?php echo $root; ?>/firma/yeni" class="button">YENİ PROJE OLUŞTUR</a></p>
     </div>
 </section>
 <section class="showcase">
@@ -129,6 +129,6 @@
 </section>
 <section class="action">
     <div class="container">
-        <a href="#" class="button" role="button">YENİ PROJE EKLE</a>
+        <a href="<?php echo $root; ?>/firma/yeni" class="button" role="button">YENİ PROJE EKLE</a>
     </div>
 </section>
