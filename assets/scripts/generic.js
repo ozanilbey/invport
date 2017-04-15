@@ -32,7 +32,8 @@ $(document).ready(function() {
         $('.menu > a').last().toggleClass('clicked');
         $('.submenu').toggleClass('open');
     });
-    $('.segment a.toggle').click(function() {
+    $(document).on(click, '.segment a.toggle', function(event) {
+        event.preventDefault();
         $(this).toggleClass('active');
         $(this).parent('.segment').children('.log').toggleClass('open');
     });
